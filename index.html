@@ -3,678 +3,747 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="SkyLux Private Aviation Care — Luxury aircraft detailing, protection, and white-glove maintenance for discerning aircraft owners and operators. Van Nuys Airport, Los Angeles.">
-  <meta property="og:title" content="SkyLux Private Aviation Care — Elevating Aircraft Care.">
-  <meta property="og:description" content="Exceptional aircraft care with unmatched precision, discretion, and luxury service.">
-  <meta property="og:type" content="website">
+  <meta name="description" content="SkyLux Private Aviation Care — Luxury aircraft detailing, protection, and white-glove maintenance for discerning aircraft owners and operators.">
   <title>SkyLux Private Aviation Care — Elevating Aircraft Care.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-  <!-- NAVIGATION -->
-  <nav id="navbar">
-    <div class="nav-inner">
-      <a href="#home" class="nav-logo">
-        <div class="logo-mark">
-          <span class="logo-sky">Sky</span><span class="logo-lux">Lux<span class="logo-sparkle">✦</span></span>
-          <span class="logo-sub-text">PRIVATE AVIATION CARE</span>
-        </div>
-      </a>
-      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#services">Services</a></li>
-        <li><a href="#why">Why SkyLux</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#areas">Locations</a></li>
-        <li><a href="#contact" class="nav-cta-link">Request a Quote</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <section id="home" class="hero">
-    <div class="hero-video-wrap">
-      <video class="hero-video" autoplay muted loop playsinline poster="assets/images/hero-poster.jpg">
-        <source src="assets/video/hero.mp4" type="video/mp4">
-      </video>
-      <div class="hero-overlay"></div>
-    </div>
-    <div class="hero-content">
-      <p class="hero-eyebrow reveal-fade">Van Nuys Airport · Los Angeles, California</p>
-      <h1 class="hero-title reveal-fade">Luxury Private<br>Aviation Care</h1>
-      <div class="hero-divider reveal-fade"></div>
-      <p class="hero-sub reveal-fade">Professional aircraft detailing, restoration, protection, and white-glove maintenance<br>for discerning aircraft owners and operators.</p>
-      <div class="hero-btns reveal-fade">
-        <a href="#contact" class="btn btn-gold">Request a Quote</a>
-        <a href="#services" class="btn btn-ghost">Explore Our Services</a>
+<!-- ====================================================
+     NAVBAR
+==================================================== -->
+<nav id="navbar" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo" aria-label="SkyLux Home">
+      <div class="logo-wordmark">
+        <span class="logo-sky">Sky</span><span class="logo-lux">Lux</span>
       </div>
-    </div>
-    <div class="hero-tagline">
-      <span class="tagline-line"></span>
-      <span class="tagline-text">Elevating Aircraft Care.</span>
-      <span class="tagline-line"></span>
-    </div>
-    <div class="hero-scroll" aria-hidden="true">
-      <span></span>
-    </div>
-  </section>
+      <span class="logo-sub">Private Aviation Care</span>
+    </a>
 
-  <!-- MARQUEE -->
-  <div class="marquee-bar">
-    <div class="marquee-track">
-      <span>Gulfstream G700 &nbsp;✦&nbsp; Bombardier Global 7500 &nbsp;✦&nbsp; Dassault Falcon 8X &nbsp;✦&nbsp; Embraer Legacy 650 &nbsp;✦&nbsp; Cessna Citation Latitude &nbsp;✦&nbsp; Pilatus PC-24 &nbsp;✦&nbsp; Bell 429 Global Ranger &nbsp;✦&nbsp; Challenger 650 &nbsp;✦&nbsp; Hawker 850XP &nbsp;✦&nbsp;</span>
-      <span>Gulfstream G700 &nbsp;✦&nbsp; Bombardier Global 7500 &nbsp;✦&nbsp; Dassault Falcon 8X &nbsp;✦&nbsp; Embraer Legacy 650 &nbsp;✦&nbsp; Cessna Citation Latitude &nbsp;✦&nbsp; Pilatus PC-24 &nbsp;✦&nbsp; Bell 429 Global Ranger &nbsp;✦&nbsp; Challenger 650 &nbsp;✦&nbsp; Hawker 850XP &nbsp;✦&nbsp;</span>
+    <ul class="nav-links" id="nav-links" role="menubar">
+      <li role="none"><a href="#services" role="menuitem">Services</a></li>
+      <li role="none"><a href="#why" role="menuitem">Why SkyLux</a></li>
+      <li role="none"><a href="#gallery" role="menuitem">Gallery</a></li>
+      <li role="none"><a href="#areas" role="menuitem">Areas</a></li>
+      <li role="none"><a href="#contact" class="nav-cta" role="menuitem">Request a Quote</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ====================================================
+     HERO
+==================================================== -->
+<section class="hero" id="home">
+  <div class="hero-media">
+    <!-- Drop hero.mp4 into assets/video/ to activate cinematic background -->
+    <video autoplay muted loop playsinline poster="assets/images/hero-poster.jpg" aria-hidden="true">
+      <source src="assets/video/hero.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="hero-overlay" aria-hidden="true"></div>
+
+  <div class="hero-body">
+    <p class="hero-eyebrow">Private Aviation Care</p>
+    <h1 class="hero-h1">Luxury Private<br>Aviation Care</h1>
+    <div class="hero-hr" aria-hidden="true"></div>
+    <p class="hero-sub">Professional aircraft detailing, restoration, protection, and white-glove maintenance for discerning aircraft owners and operators.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn btn-gold">Request a Quote</a>
+      <a href="#services" class="btn btn-ghost">Explore Our Services</a>
     </div>
   </div>
 
-  <!-- MISSION STRIP -->
-  <section class="mission-strip">
-    <div class="container">
-      <div class="mission-grid">
-        <div class="mission-item reveal-up">
-          <div class="mission-icon">✦</div>
-          <h3>Precision</h3>
-          <p>Every surface treated with meticulous attention and aviation-grade expertise.</p>
+  <div class="hero-tagline" aria-hidden="true">
+    <span>Elevating Aircraft Care.</span>
+  </div>
+  <div class="scroll-cue" aria-hidden="true"></div>
+</section>
+
+<!-- ====================================================
+     MARQUEE
+==================================================== -->
+<div class="marquee-bar" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Gulfstream G700</span>
+    <span>Global 7500</span>
+    <span>Falcon 10X</span>
+    <span>Challenger 3500</span>
+    <span>Citation Longitude</span>
+    <span>Phenom 300E</span>
+    <span>Embraer Praetor 600</span>
+    <span>Legacy 650E</span>
+    <span>Bell 429</span>
+    <span>Sikorsky S-76</span>
+    <span>Dassault Falcon 8X</span>
+    <span>Bombardier Learjet</span>
+    <!-- duplicate for seamless loop -->
+    <span>Gulfstream G700</span>
+    <span>Global 7500</span>
+    <span>Falcon 10X</span>
+    <span>Challenger 3500</span>
+    <span>Citation Longitude</span>
+    <span>Phenom 300E</span>
+    <span>Embraer Praetor 600</span>
+    <span>Legacy 650E</span>
+    <span>Bell 429</span>
+    <span>Sikorsky S-76</span>
+    <span>Dassault Falcon 8X</span>
+    <span>Bombardier Learjet</span>
+  </div>
+</div>
+
+<!-- ====================================================
+     PILLARS
+==================================================== -->
+<div class="pillars">
+  <div class="container">
+    <div class="pillars-grid">
+      <div class="pillar reveal">
+        <div class="pillar-icon">◈</div>
+        <h3>Precision</h3>
+        <p>Meticulous attention to every surface, seam, and system — nothing escapes our trained eye.</p>
+      </div>
+      <div class="pillar reveal">
+        <div class="pillar-icon">◈</div>
+        <h3>Discretion</h3>
+        <p>Your privacy is paramount. Our team operates with the highest level of confidentiality at all times.</p>
+      </div>
+      <div class="pillar reveal">
+        <div class="pillar-icon">◈</div>
+        <h3>Excellence</h3>
+        <p>Aviation-grade products, white-glove service standards, and results that reflect your aircraft's true value.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ====================================================
+     SERVICES
+==================================================== -->
+<section class="services-section section" id="services">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Our Services</span>
+      <h2 class="section-title">White-Glove Care<br>For Every Aircraft</h2>
+      <span class="gold-line"></span>
+      <p class="lead">From cabin to airframe, every service is performed with aviation-safe products and the precision your aircraft deserves.</p>
+    </div>
+
+    <!-- Tabs -->
+    <div class="service-tabs" role="tablist" aria-label="Service categories">
+      <button class="stab active" role="tab" aria-selected="true"  aria-controls="panel-interior" data-tab="interior">Interior</button>
+      <button class="stab"        role="tab" aria-selected="false" aria-controls="panel-exterior" data-tab="exterior">Exterior</button>
+      <button class="stab"        role="tab" aria-selected="false" aria-controls="panel-fleet"    data-tab="fleet">Fleet</button>
+    </div>
+
+    <!-- Interior Panel -->
+    <div class="spanel active" id="panel-interior" role="tabpanel">
+      <div class="service-grid">
+        <div class="scard reveal">
+          <div class="scard-icon">◇</div>
+          <h3>Luxury Leather Care</h3>
+          <p>Deep cleaning and conditioning of all leather surfaces using pH-balanced aviation-safe formulations.</p>
         </div>
-        <div class="mission-vline"></div>
-        <div class="mission-item reveal-up" style="animation-delay:.1s">
-          <div class="mission-icon">✦</div>
-          <h3>Discretion</h3>
-          <p>Your aircraft, your privacy. Confidential service for high-profile clients.</p>
+        <div class="scard reveal">
+          <div class="scard-icon">◇</div>
+          <h3>Leather Conditioning</h3>
+          <p>Restoration and protection of premium leather to maintain suppleness, color, and longevity.</p>
         </div>
-        <div class="mission-vline"></div>
-        <div class="mission-item reveal-up" style="animation-delay:.2s">
-          <div class="mission-icon">✦</div>
-          <h3>Excellence</h3>
-          <p>Uncompromising standards that reflect the highest benchmarks of private aviation.</p>
+        <div class="scard reveal">
+          <div class="scard-icon">◇</div>
+          <h3>Wood Veneer Care</h3>
+          <p>Lacquered, matte, and exotic wood panel treatment with zero-moisture micro-fiber protocols.</p>
+        </div>
+        <div class="scard reveal">
+          <div class="scard-icon">◇</div>
+          <h3>Carpet Extraction</h3>
+          <p>Hot-water extraction and deep-clean of aviation carpets, rugs, and floor runners.</p>
+        </div>
+        <div class="scard reveal">
+          <div class="scard-icon">◇</div>
+          <h3>Headliner Cleaning</h3>
+          <p>Delicate treatment of suede, fabric, and perforated headliners without saturation or damage.</p>
+        </div>
+        <div class="scard reveal">
+          <div class="scard-icon">◇</div>
+          <h3>Cockpit Detailing</h3>
+          <p>Panel, instrument, and avionics-safe cleaning with anti-static, non-residue products.</p>
+        </div>
+        <div class="scard reveal">
+          <div class="scard-icon">◇</div>
+          <h3>Galley Sanitization</h3>
+          <p>Full sanitization of galley surfaces, cabinetry, and food-prep areas to the highest hygiene standards.</p>
+        </div>
+        <div class="scard reveal">
+          <div class="scard-icon">◇</div>
+          <h3>Lavatory Detailing</h3>
+          <p>Thorough cleaning and deodorizing of lavatories, fixtures, and all contact surfaces.</p>
+        </div>
+        <div class="scard reveal">
+          <div class="scard-icon">◇</div>
+          <h3>Acrylic Window Care</h3>
+          <p>Scratch-free cleaning and polishing of cabin windows using approved aviation acrylic products.</p>
+        </div>
+        <div class="scard reveal">
+          <div class="scard-icon">◇</div>
+          <h3>Odor Elimination</h3>
+          <p>Ozone and enzyme-based odor neutralization throughout the cabin environment.</p>
+        </div>
+        <div class="scard reveal">
+          <div class="scard-icon">◇</div>
+          <h3>Interior Protection</h3>
+          <p>Protective coatings and fabric guards applied to preserve surfaces between maintenance cycles.</p>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- SERVICES -->
-  <section id="services" class="section services-section">
-    <div class="container">
-      <div class="section-header reveal-up">
-        <p class="eyebrow-gold">Our Services</p>
-        <h2 class="section-title">Comprehensive Aircraft<br>Care Programs</h2>
-        <div class="gold-rule"></div>
-        <p class="section-intro">Every service performed with aviation-safe products, white-glove precision, and absolute respect for your aircraft.</p>
+    <!-- Exterior Panel -->
+    <div class="spanel" id="panel-exterior" role="tabpanel">
+      <div class="service-grid">
+        <div class="scard reveal">
+          <div class="scard-icon">◇</div>
+          <h3>Aircraft Washing</h3>
+          <p>Full wet-wash using pH-neutral, FAA-conscious detergents safe for all aircraft finishes.</p>
+        </div>
+        <div class="scard reveal">
+          <div class="scard-icon">◇</div>
+          <h3>Dry Wash</h3>
+          <p>Waterless exterior cleaning — ideal for hangars and water-restricted environments.</p>
+        </div>
+        <div class="scard reveal">
+          <div class="scard-icon">◇</div>
+          <h3>Paint Protection</h3>
+          <p>Application of aviation-grade sealants to shield paint from UV, oxidation, and contamination.</p>
+        </div>
+        <div class="scard reveal">
+          <div class="scard-icon">◇</div>
+          <h3>Ceramic Coating</h3>
+          <p>Professional-grade ceramic coatings that provide long-term hydrophobic protection and deep gloss.</p>
+        </div>
+        <div class="scard reveal">
+          <div class="scard-icon">◇</div>
+          <h3>Brightwork Polishing</h3>
+          <p>Restoration of chrome, titanium, and polished metal trim to a mirror finish.</p>
+        </div>
+        <div class="scard reveal">
+          <div class="scard-icon">◇</div>
+          <h3>Metal Polishing</h3>
+          <p>Multi-stage polishing of aluminum, stainless, and other airframe metals.</p>
+        </div>
+        <div class="scard reveal">
+          <div class="scard-icon">◇</div>
+          <h3>Paint Correction</h3>
+          <p>Compound, polish, and finishing stages to remove swirl marks, water spots, and oxidation.</p>
+        </div>
+        <div class="scard reveal">
+          <div class="scard-icon">◇</div>
+          <h3>Exhaust Stain Removal</h3>
+          <p>Targeted treatment of exhaust deposits and trailing edge staining on nacelles and fuselage.</p>
+        </div>
+        <div class="scard reveal">
+          <div class="scard-icon">◇</div>
+          <h3>Wheel Detailing</h3>
+          <p>Landing gear bays, wheels, and brake assemblies cleaned and protected.</p>
+        </div>
+        <div class="scard reveal">
+          <div class="scard-icon">◇</div>
+          <h3>Surface Decontamination</h3>
+          <p>Iron fallout, runway rubber, and industrial contamination removal from all exterior surfaces.</p>
+        </div>
       </div>
+    </div>
 
-      <div class="services-tabs reveal-up">
-        <button class="tab-btn active" data-tab="interior">Interior Care</button>
-        <button class="tab-btn" data-tab="exterior">Exterior Care</button>
-        <button class="tab-btn" data-tab="fleet">Fleet Maintenance</button>
+    <!-- Fleet Panel -->
+    <div class="spanel" id="panel-fleet" role="tabpanel">
+      <div class="service-grid">
+        <div class="scard reveal">
+          <div class="scard-icon">◇</div>
+          <h3>Weekly Maintenance</h3>
+          <p>Scheduled weekly visits to keep your aircraft in constant ready-to-fly condition.</p>
+        </div>
+        <div class="scard reveal">
+          <div class="scard-icon">◇</div>
+          <h3>Bi-Weekly Maintenance</h3>
+          <p>Bi-weekly care program with comprehensive interior and exterior attention.</p>
+        </div>
+        <div class="scard reveal">
+          <div class="scard-icon">◇</div>
+          <h3>Monthly Maintenance</h3>
+          <p>Full monthly detail program with deep-clean, protection, and condition report.</p>
+        </div>
+        <div class="scard reveal">
+          <div class="scard-icon">◇</div>
+          <h3>Corporate Fleet Programs</h3>
+          <p>Custom multi-aircraft programs designed for corporate flight departments.</p>
+        </div>
+        <div class="scard reveal">
+          <div class="scard-icon">◇</div>
+          <h3>Charter Fleet Maintenance</h3>
+          <p>High-frequency, turn-around-ready cleaning for Part 135 charter operators.</p>
+        </div>
+        <div class="scard reveal">
+          <div class="scard-icon">◇</div>
+          <h3>FBO Partnerships</h3>
+          <p>On-site partnership programs for FBOs seeking a white-glove detailing offering.</p>
+        </div>
+        <div class="scard reveal">
+          <div class="scard-icon">◇</div>
+          <h3>Customized Plans</h3>
+          <p>Bespoke maintenance schedules built around your operational needs and aircraft type.</p>
+        </div>
       </div>
+    </div>
+  </div>
+</section>
 
-      <div class="tab-content active" id="tab-interior">
-        <div class="services-grid">
-          <div class="service-card glass">
-            <div class="sc-icon">⬡</div>
-            <h3>Luxury Leather Cleaning</h3>
-            <p>Deep-clean and restore premium aniline, semi-aniline, and synthetic leather to original brilliance.</p>
-          </div>
-          <div class="service-card glass">
-            <div class="sc-icon">⬡</div>
-            <h3>Leather Conditioning</h3>
-            <p>Aviation-grade conditioning agents that hydrate, protect, and extend the life of your cabin leather.</p>
-          </div>
-          <div class="service-card glass">
-            <div class="sc-icon">⬡</div>
-            <h3>Wood Veneer Care</h3>
-            <p>Delicate treatment of lacquered, matte, and exotic wood panels with zero-moisture micro-fiber protocols.</p>
-          </div>
-          <div class="service-card glass">
-            <div class="sc-icon">⬡</div>
-            <h3>Carpet Extraction</h3>
-            <p>Hot-water extraction with aviation-safe shampoo for wool, silk-blend, and synthetic cabin carpets.</p>
-          </div>
-          <div class="service-card glass">
-            <div class="sc-icon">⬡</div>
-            <h3>Headliner Cleaning</h3>
-            <p>Dry and low-moisture treatment for fabric, alcantara, and composite headliner panels.</p>
-          </div>
-          <div class="service-card glass">
-            <div class="sc-icon">⬡</div>
-            <h3>Cockpit Detailing</h3>
-            <p>Instrument panel, avionics screens, and control surfaces treated with dry-safe precision protocols.</p>
-          </div>
-          <div class="service-card glass">
-            <div class="sc-icon">⬡</div>
-            <h3>Galley Sanitization</h3>
-            <p>Food-safe sanitization of all galley surfaces, appliances, and food-contact areas.</p>
-          </div>
-          <div class="service-card glass">
-            <div class="sc-icon">⬡</div>
-            <h3>Lavatory Detailing</h3>
-            <p>Marble, stone, chrome, and composite lavatory surfaces restored to immaculate condition.</p>
-          </div>
-          <div class="service-card glass">
-            <div class="sc-icon">⬡</div>
-            <h3>Acrylic Window Care</h3>
-            <p>Streak-free clarity on acrylic and tempered glass windows using aviation-approved cleaners only.</p>
-          </div>
-          <div class="service-card glass">
-            <div class="sc-icon">⬡</div>
-            <h3>Odor Elimination</h3>
-            <p>Professional odor neutralization — not masking — leaving cabins with a clean, neutral atmosphere.</p>
-          </div>
-          <div class="service-card glass">
-            <div class="sc-icon">⬡</div>
-            <h3>Interior Protection</h3>
-            <p>Anti-static treatments, UV-protective coatings, and fabric protectors to preserve cabin materials.</p>
+<!-- ====================================================
+     WHY SKYLUX
+==================================================== -->
+<section class="why-section section" id="why">
+  <div class="why-bg" aria-hidden="true"></div>
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Why SkyLux</span>
+      <h2 class="section-title">The Standard of<br>Private Aviation Care</h2>
+      <span class="gold-line"></span>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-num">01</div>
+        <div class="why-text">
+          <h3>FAA-Conscious Product Selection</h3>
+          <p>Every product we use is selected for aviation compatibility — safe for avionics, seals, and certified materials.</p>
+        </div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num">02</div>
+        <div class="why-text">
+          <h3>Premium Aviation-Safe Chemicals</h3>
+          <p>We source exclusively from trusted aviation chemical suppliers — no shortcuts, no compromises.</p>
+        </div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num">03</div>
+        <div class="why-text">
+          <h3>White-Glove Luxury Service</h3>
+          <p>Every interaction — from scheduling to the final walk-through — is conducted with concierge-level care.</p>
+        </div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num">04</div>
+        <div class="why-text">
+          <h3>Highly Trained Professionals</h3>
+          <p>Our technicians are trained specifically in aviation detailing, materials, and client expectations.</p>
+        </div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num">05</div>
+        <div class="why-text">
+          <h3>Meticulous Attention to Detail</h3>
+          <p>We treat every aircraft as if it were our own — no surface, corner, or cavity is overlooked.</p>
+        </div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num">06</div>
+        <div class="why-text">
+          <h3>Discreet &amp; Confidential</h3>
+          <p>We understand the privacy requirements of high-profile operators and owners. Absolute discretion is guaranteed.</p>
+        </div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num">07</div>
+        <div class="why-text">
+          <h3>Mobile Luxury Detailing</h3>
+          <p>We come to you — hangar, ramp, or FBO — with our full professional setup.</p>
+        </div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num">08</div>
+        <div class="why-text">
+          <h3>Reliable Scheduling</h3>
+          <p>We work around your flight schedule — not ours. On time, every time, with zero disruption to operations.</p>
+        </div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num">09</div>
+        <div class="why-text">
+          <h3>Customized Programs</h3>
+          <p>No two aircraft or operators are the same. We build programs tailored to your aircraft and mission profile.</p>
+        </div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num">10</div>
+        <div class="why-text">
+          <h3>Exceptional Client Experience</h3>
+          <p>From first contact to final delivery, the SkyLux experience sets a new benchmark for aviation care.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================
+     GALLERY
+==================================================== -->
+<section class="gallery-section section" id="gallery">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Gallery</span>
+      <h2 class="section-title">The Art of<br>Aircraft Care</h2>
+      <span class="gold-line"></span>
+      <p class="lead">Every aircraft tells a story. Our work ensures it's told impeccably.</p>
+    </div>
+
+    <div class="gallery-filter" role="group" aria-label="Gallery filter">
+      <button class="gbtn active" data-filter="all">All</button>
+      <button class="gbtn" data-filter="exterior">Exterior</button>
+      <button class="gbtn" data-filter="interior">Interior</button>
+      <button class="gbtn" data-filter="corporate">Corporate</button>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gitem wide" data-cat="exterior">
+        <div class="gitem-img"><div class="gitem-placeholder">Gulfstream G700 · Full Detail</div></div>
+        <div class="gitem-cap">
+          <span class="gitem-label">Gulfstream G700</span>
+          <span class="gitem-tag">Exterior</span>
+        </div>
+      </div>
+      <div class="gitem" data-cat="interior">
+        <div class="gitem-img"><div class="gitem-placeholder">Cabin Interior</div></div>
+        <div class="gitem-cap">
+          <span class="gitem-label">Cabin Leather Care</span>
+          <span class="gitem-tag">Interior</span>
+        </div>
+      </div>
+      <div class="gitem" data-cat="exterior">
+        <div class="gitem-img"><div class="gitem-placeholder">Global 7500</div></div>
+        <div class="gitem-cap">
+          <span class="gitem-label">Global 7500</span>
+          <span class="gitem-tag">Exterior</span>
+        </div>
+      </div>
+      <div class="gitem" data-cat="interior">
+        <div class="gitem-img"><div class="gitem-placeholder">Cockpit Detail</div></div>
+        <div class="gitem-cap">
+          <span class="gitem-label">Cockpit Detailing</span>
+          <span class="gitem-tag">Interior</span>
+        </div>
+      </div>
+      <div class="gitem wide" data-cat="corporate">
+        <div class="gitem-img"><div class="gitem-placeholder">Corporate Fleet · VNY</div></div>
+        <div class="gitem-cap">
+          <span class="gitem-label">Corporate Fleet Program</span>
+          <span class="gitem-tag">Corporate</span>
+        </div>
+      </div>
+      <div class="gitem" data-cat="exterior">
+        <div class="gitem-img"><div class="gitem-placeholder">Falcon 8X · Ceramic</div></div>
+        <div class="gitem-cap">
+          <span class="gitem-label">Ceramic Coating</span>
+          <span class="gitem-tag">Exterior</span>
+        </div>
+      </div>
+    </div>
+    <p class="gallery-note">Photography coming soon. Placeholder layouts shown.</p>
+  </div>
+</section>
+
+<!-- ====================================================
+     TESTIMONIALS
+==================================================== -->
+<section class="testimonials-section section" id="testimonials">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Client Testimonials</span>
+      <h2 class="section-title">What Our Clients Say</h2>
+      <span class="gold-line"></span>
+    </div>
+
+    <div class="tgrid">
+      <div class="tcard reveal">
+        <div class="stars">★★★★★</div>
+        <blockquote>The team treated our G650 like it was their own aircraft. The attention to detail was extraordinary — every surface immaculate.</blockquote>
+        <div class="tauthor">
+          <div class="tavatar">JM</div>
+          <div>
+            <div class="tname">J. Martinez</div>
+            <div class="trole">Director of Aviation, Family Office</div>
           </div>
         </div>
       </div>
-
-      <div class="tab-content" id="tab-exterior">
-        <div class="services-grid">
-          <div class="service-card glass">
-            <div class="sc-icon">⬡</div>
-            <h3>Aircraft Washing</h3>
-            <p>Full fuselage wash with aviation-safe low-pressure water and pH-neutral aircraft wash concentrate.</p>
-          </div>
-          <div class="service-card glass">
-            <div class="sc-icon">⬡</div>
-            <h3>Dry Wash</h3>
-            <p>Waterless exterior cleaning — ideal for hangared aircraft and water-restricted environments.</p>
-          </div>
-          <div class="service-card glass">
-            <div class="sc-icon">⬡</div>
-            <h3>Paint Protection</h3>
-            <p>Multi-layer sealants and protective films to preserve polyurethane aviation paint finishes.</p>
-          </div>
-          <div class="service-card glass">
-            <div class="sc-icon">⬡</div>
-            <h3>Ceramic Coating</h3>
-            <p>Aviation-grade nano-ceramic coating with years of hydrophobic protection and UV resistance.</p>
-          </div>
-          <div class="service-card glass">
-            <div class="sc-icon">⬡</div>
-            <h3>Brightwork Polishing</h3>
-            <p>Chrome, stainless, and anodized brightwork brought to mirror finish.</p>
-          </div>
-          <div class="service-card glass">
-            <div class="sc-icon">⬡</div>
-            <h3>Metal Polishing</h3>
-            <p>Propeller tips, spinner cones, leading edges, and cowlings polished to maximum brilliance.</p>
-          </div>
-          <div class="service-card glass">
-            <div class="sc-icon">⬡</div>
-            <h3>Paint Correction</h3>
-            <p>Multi-stage correction removing swirl marks, oxidation, and surface imperfections.</p>
-          </div>
-          <div class="service-card glass">
-            <div class="sc-icon">⬡</div>
-            <h3>Exhaust Stain Removal</h3>
-            <p>Carbon and exhaust deposits removed from fuselage and tail surfaces without damage to paint.</p>
-          </div>
-          <div class="service-card glass">
-            <div class="sc-icon">⬡</div>
-            <h3>Wheel Detailing</h3>
-            <p>Landing gear, wheel bays, and tire detailing with aviation-grade degreaser and rubber restorer.</p>
-          </div>
-          <div class="service-card glass">
-            <div class="sc-icon">⬡</div>
-            <h3>Surface Decontamination</h3>
-            <p>Chemical decontamination removing embedded industrial fallout, calcium, and oxidation from all surfaces.</p>
+      <div class="tcard reveal">
+        <div class="stars">★★★★★</div>
+        <blockquote>SkyLux has become an essential partner for our charter fleet. Reliable, discreet, and the quality is consistently exceptional.</blockquote>
+        <div class="tauthor">
+          <div class="tavatar">RK</div>
+          <div>
+            <div class="tname">R. Kovacs</div>
+            <div class="trole">Chief Pilot, Charter Operator</div>
           </div>
         </div>
       </div>
-
-      <div class="tab-content" id="tab-fleet">
-        <div class="services-grid">
-          <div class="service-card glass">
-            <div class="sc-icon">⬡</div>
-            <h3>Weekly Maintenance</h3>
-            <p>Full interior and exterior service on a weekly schedule — ideal for high-cycle charter aircraft.</p>
-          </div>
-          <div class="service-card glass">
-            <div class="sc-icon">⬡</div>
-            <h3>Bi-Weekly Maintenance</h3>
-            <p>Comprehensive biweekly detail maintaining show-room presentation at a manageable cadence.</p>
-          </div>
-          <div class="service-card glass">
-            <div class="sc-icon">⬡</div>
-            <h3>Monthly Maintenance</h3>
-            <p>Deep monthly service with full exterior wash, wax, interior detail, and leather conditioning.</p>
-          </div>
-          <div class="service-card glass">
-            <div class="sc-icon">⬡</div>
-            <h3>Corporate Fleet Programs</h3>
-            <p>Tailored maintenance agreements for corporate flight departments managing multiple aircraft types.</p>
-          </div>
-          <div class="service-card glass">
-            <div class="sc-icon">⬡</div>
-            <h3>Charter Fleet Maintenance</h3>
-            <p>Rapid-turnaround detailing programs designed around charter operational schedules and rotation cycles.</p>
-          </div>
-          <div class="service-card glass">
-            <div class="sc-icon">⬡</div>
-            <h3>FBO Partnerships</h3>
-            <p>Preferred vendor agreements with FBOs to provide on-demand and scheduled services to based aircraft.</p>
-          </div>
-          <div class="service-card glass">
-            <div class="sc-icon">⬡</div>
-            <h3>Customized Programs</h3>
-            <p>Every fleet is different. We design bespoke maintenance programs around your aircraft, schedule, and standards.</p>
+      <div class="tcard reveal">
+        <div class="stars">★★★★★</div>
+        <blockquote>Professional, punctual, and the results speak for themselves. Our Global came out looking better than the day we took delivery.</blockquote>
+        <div class="tauthor">
+          <div class="tavatar">AS</div>
+          <div>
+            <div class="tname">A. Sterling</div>
+            <div class="trole">Private Aircraft Owner</div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- WHY SKYLUX -->
-  <section id="why" class="section why-section">
-    <div class="why-bg"></div>
-    <div class="container">
-      <div class="section-header reveal-up">
-        <p class="eyebrow-gold">Why SkyLux</p>
-        <h2 class="section-title title-light">The Standard of Excellence<br>in Private Aviation Care</h2>
-        <div class="gold-rule"></div>
+<!-- ====================================================
+     SERVICE AREAS
+==================================================== -->
+<section class="areas-section section" id="areas">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Service Areas</span>
+      <h2 class="section-title">Los Angeles &amp;<br>Southern California</h2>
+      <span class="gold-line"></span>
+      <p class="lead">We operate across all major private aviation facilities in the greater Los Angeles region.</p>
+    </div>
+
+    <div class="airports">
+      <div class="airport primary reveal">
+        <div class="airport-code">VNY</div>
+        <div class="airport-name">Van Nuys Airport</div>
+        <div class="airport-tag">Primary Base</div>
       </div>
-      <div class="why-grid">
-        <div class="why-card reveal-up">
-          <div class="why-num">01</div>
-          <div class="why-content">
-            <h3>FAA-Conscious Product Selection</h3>
-            <p>Every product used on your aircraft is aviation-approved, pH-neutral where required, and selected to be safe for paint, plastics, seals, and avionics.</p>
-          </div>
-        </div>
-        <div class="why-card reveal-up" style="animation-delay:.05s">
-          <div class="why-num">02</div>
-          <div class="why-content">
-            <h3>White-Glove Luxury Service</h3>
-            <p>From shoe covers to microfiber finishing, our service standards mirror the luxury hospitality industry — because your aircraft deserves the same care as a five-star suite.</p>
-          </div>
-        </div>
-        <div class="why-card reveal-up" style="animation-delay:.1s">
-          <div class="why-num">03</div>
-          <div class="why-content">
-            <h3>Highly Trained Professionals</h3>
-            <p>Our team is trained specifically on aircraft surfaces, materials, and safety zones — not repurposed automotive detailers.</p>
-          </div>
-        </div>
-        <div class="why-card reveal-up" style="animation-delay:.15s">
-          <div class="why-num">04</div>
-          <div class="why-content">
-            <h3>Meticulous Attention to Detail</h3>
-            <p>We treat every stitch, every veneer panel, and every window as if it's the defining feature of the aircraft — because to your passenger, it is.</p>
-          </div>
-        </div>
-        <div class="why-card reveal-up" style="animation-delay:.2s">
-          <div class="why-num">05</div>
-          <div class="why-content">
-            <h3>Discreet & Confidential</h3>
-            <p>Absolute discretion for high-profile clients. Our team signs NDAs, follows strict confidentiality protocols, and never photographs client aircraft without consent.</p>
-          </div>
-        </div>
-        <div class="why-card reveal-up" style="animation-delay:.25s">
-          <div class="why-num">06</div>
-          <div class="why-content">
-            <h3>Mobile Luxury Detailing</h3>
-            <p>Our fully-equipped mobile units come to your hangar, FBO, or tie-down. Full SkyLux service without moving your aircraft.</p>
-          </div>
-        </div>
-        <div class="why-card reveal-up" style="animation-delay:.3s">
-          <div class="why-num">07</div>
-          <div class="why-content">
-            <h3>Reliable Scheduling</h3>
-            <p>We build our schedule around your operations — not the other way around. On time, every time, with zero disruption to your flight program.</p>
-          </div>
-        </div>
-        <div class="why-card reveal-up" style="animation-delay:.35s">
-          <div class="why-num">08</div>
-          <div class="why-content">
-            <h3>Exceptional Client Experience</h3>
-            <p>From first contact to final walkthrough, every interaction with SkyLux reflects the level of excellence you expect from a true luxury service provider.</p>
-          </div>
-        </div>
+      <div class="airport reveal">
+        <div class="airport-code">SMO</div>
+        <div class="airport-name">Santa Monica Airport</div>
+      </div>
+      <div class="airport reveal">
+        <div class="airport-code">BUR</div>
+        <div class="airport-name">Hollywood Burbank</div>
+      </div>
+      <div class="airport reveal">
+        <div class="airport-code">LAX</div>
+        <div class="airport-name">Los Angeles Intl</div>
+      </div>
+      <div class="airport reveal">
+        <div class="airport-code">LGB</div>
+        <div class="airport-name">Long Beach Airport</div>
+      </div>
+      <div class="airport reveal">
+        <div class="airport-code">SNA</div>
+        <div class="airport-name">John Wayne / Orange County</div>
+      </div>
+      <div class="airport reveal">
+        <div class="airport-code">CMA</div>
+        <div class="airport-name">Camarillo Airport</div>
+      </div>
+      <div class="airport reveal">
+        <div class="airport-code">WHP</div>
+        <div class="airport-name">Whiteman Airport</div>
+      </div>
+      <div class="airport reveal">
+        <div class="airport-code">POC</div>
+        <div class="airport-name">Brackett Field</div>
+      </div>
+      <div class="airport reveal">
+        <div class="airport-code">EMT</div>
+        <div class="airport-name">El Monte Airport</div>
+      </div>
+      <div class="airport reveal">
+        <div class="airport-code">HHR</div>
+        <div class="airport-name">Hawthorne Municipal</div>
+      </div>
+      <div class="airport reveal">
+        <div class="airport-code">TOA</div>
+        <div class="airport-name">Torrance / Zamperini</div>
       </div>
     </div>
-  </section>
 
-  <!-- GALLERY -->
-  <section id="gallery" class="section gallery-section">
-    <div class="container">
-      <div class="section-header reveal-up">
-        <p class="eyebrow-gold">Gallery</p>
-        <h2 class="section-title">Our Work Speaks<br>for Itself</h2>
-        <div class="gold-rule"></div>
-        <p class="section-intro">Before and after transformations across every aircraft category we serve. All images are actual SkyLux client aircraft.</p>
-      </div>
+    <p class="areas-footer">Don't see your airport? <a href="#contact">Contact us</a> — we service the entire Southern California region on request.</p>
+  </div>
+</section>
 
-      <div class="gallery-filter reveal-up">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="exterior">Exterior</button>
-        <button class="filter-btn" data-filter="interior">Interior</button>
-        <button class="filter-btn" data-filter="helicopter">Helicopter</button>
-        <button class="filter-btn" data-filter="corporate">Corporate Fleet</button>
-      </div>
+<!-- ====================================================
+     CONTACT
+==================================================== -->
+<section class="contact-section section" id="contact">
+  <div class="contact-bg" aria-hidden="true"></div>
+  <div class="container">
+    <div class="contact-wrap">
 
-      <div class="gallery-grid">
-        <div class="gallery-item wide reveal-up" data-cat="exterior">
-          <div class="gallery-img-wrap">
-            <img src="assets/images/gallery-ext-1.jpg" alt="Private Jet Exterior Restoration" loading="lazy">
+      <!-- Info -->
+      <div class="contact-info reveal">
+        <span class="eyebrow">Get in Touch</span>
+        <h2 class="section-title">Request a<br>Consultation</h2>
+        <span class="gold-line"></span>
+        <p class="contact-body">Whether you need a one-time detail, a recurring maintenance program, or a fleet partnership, we're ready to create a bespoke solution for your aircraft.</p>
+
+        <div class="cdetails">
+          <div>
+            <div class="citem-label">Location</div>
+            <div class="citem-val">Van Nuys Airport (VNY)<br>Los Angeles, California</div>
           </div>
-          <div class="gallery-overlay">
-            <span class="gallery-label">Private Jet — Exterior Restoration</span>
-            <span class="gallery-badge">Before / After</span>
+          <div>
+            <div class="citem-label">Email</div>
+            <div class="citem-val"><a href="mailto:info@skyluxaviationcare.com" class="citem-val">info@skyluxaviationcare.com</a></div>
           </div>
-        </div>
-        <div class="gallery-item reveal-up" data-cat="interior" style="animation-delay:.05s">
-          <div class="gallery-img-wrap">
-            <img src="assets/images/gallery-int-1.jpg" alt="Executive Cabin Detailing" loading="lazy">
-          </div>
-          <div class="gallery-overlay">
-            <span class="gallery-label">Executive Cabin Detailing</span>
-          </div>
-        </div>
-        <div class="gallery-item reveal-up" data-cat="helicopter" style="animation-delay:.1s">
-          <div class="gallery-img-wrap">
-            <img src="assets/images/gallery-heli-1.jpg" alt="Helicopter Full Detail" loading="lazy">
-          </div>
-          <div class="gallery-overlay">
-            <span class="gallery-label">Helicopter Full Detail</span>
+          <div>
+            <div class="citem-label">Hours</div>
+            <div class="citem-val">Monday – Saturday, 6 AM – 8 PM<br>On-call for fleet emergencies</div>
           </div>
         </div>
-        <div class="gallery-item reveal-up" data-cat="corporate" style="animation-delay:.15s">
-          <div class="gallery-img-wrap">
-            <img src="assets/images/gallery-corp-1.jpg" alt="Corporate Aircraft Ceramic Coat" loading="lazy">
-          </div>
-          <div class="gallery-overlay">
-            <span class="gallery-label">Corporate Fleet — Ceramic Coat</span>
-          </div>
-        </div>
-        <div class="gallery-item wide reveal-up" data-cat="exterior" style="animation-delay:.1s">
-          <div class="gallery-img-wrap">
-            <img src="assets/images/gallery-ext-2.jpg" alt="Ceramic Coating Full Fuselage" loading="lazy">
-          </div>
-          <div class="gallery-overlay">
-            <span class="gallery-label">Ceramic Coating — Full Fuselage</span>
-            <span class="gallery-badge">5-Year Protection</span>
-          </div>
-        </div>
-        <div class="gallery-item reveal-up" data-cat="interior" style="animation-delay:.2s">
-          <div class="gallery-img-wrap">
-            <img src="assets/images/gallery-int-2.jpg" alt="Leather Restoration" loading="lazy">
-          </div>
-          <div class="gallery-overlay">
-            <span class="gallery-label">Leather Restoration</span>
+
+        <div class="urgent-badge">
+          <div class="udot"></div>
+          <div>
+            <strong>Flight Departure Preparation</strong>
+            <p>Need your aircraft ready before a scheduled departure? Call us for priority scheduling.</p>
           </div>
         </div>
       </div>
-      <p class="gallery-note reveal-up">Client confidentiality is respected at all times. Aircraft registration and owner details are never disclosed.</p>
-    </div>
-  </section>
 
-  <!-- TESTIMONIALS -->
-  <section class="section testimonials-section">
-    <div class="container">
-      <div class="section-header reveal-up">
-        <p class="eyebrow-gold">Testimonials</p>
-        <h2 class="section-title">Trusted by Aviation's Elite</h2>
-        <div class="gold-rule"></div>
-      </div>
-      <div class="testimonials-grid">
-        <div class="testimonial-card glass reveal-up">
-          <div class="stars">★★★★★</div>
-          <blockquote>"SkyLux transformed our Gulfstream G650 to better-than-delivery condition. The level of precision and professionalism is unmatched. Our aircraft has never looked so immaculate."</blockquote>
-          <div class="testimonial-author">
-            <div class="author-avatar">RH</div>
-            <div>
-              <div class="author-name">Capt. Robert Harrington</div>
-              <div class="author-role">Chief Pilot, Fortune 500 Flight Department</div>
+      <!-- Form -->
+      <div class="cform reveal" role="form" aria-label="Quote request form">
+        <span class="eyebrow" style="margin-bottom:28px">Request a Quote</span>
+        <form id="contact-form" novalidate>
+          <div class="frow">
+            <div class="fg">
+              <label for="f-name">Full Name</label>
+              <input type="text" id="f-name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="fg">
+              <label for="f-email">Email Address</label>
+              <input type="email" id="f-email" name="email" placeholder="your@email.com" required>
             </div>
           </div>
-        </div>
-        <div class="testimonial-card glass reveal-up" style="animation-delay:.08s">
-          <div class="stars">★★★★★</div>
-          <blockquote>"We run a charter fleet of eight aircraft and SkyLux manages our entire detailing program. Reliable, thorough, and they truly understand aviation operations. Our clients notice the difference the moment they board."</blockquote>
-          <div class="testimonial-author">
-            <div class="author-avatar">MC</div>
-            <div>
-              <div class="author-name">Marcus Chen</div>
-              <div class="author-role">Director of Operations, Elite Charter Group</div>
+          <div class="frow">
+            <div class="fg">
+              <label for="f-phone">Phone</label>
+              <input type="tel" id="f-phone" name="phone" placeholder="+1 (000) 000-0000">
+            </div>
+            <div class="fg">
+              <label for="f-aircraft">Aircraft Type</label>
+              <input type="text" id="f-aircraft" name="aircraft" placeholder="e.g. Gulfstream G650">
             </div>
           </div>
-        </div>
-        <div class="testimonial-card glass reveal-up" style="animation-delay:.16s">
-          <div class="stars">★★★★★</div>
-          <blockquote>"The ceramic coating on my Citation Latitude is phenomenal. Three years on and the paint looks flawless. I've recommended SkyLux to every pilot at our FBO. Simply the finest aircraft care service I've experienced."</blockquote>
-          <div class="testimonial-author">
-            <div class="author-avatar">VA</div>
-            <div>
-              <div class="author-name">Victoria Ashworth</div>
-              <div class="author-role">Aircraft Owner & Private Pilot</div>
-            </div>
+          <div class="fg">
+            <label for="f-service">Service Needed</label>
+            <select id="f-service" name="service">
+              <option value="" disabled selected>Select a service</option>
+              <option>Interior Detail</option>
+              <option>Exterior Detail</option>
+              <option>Full Detail (Interior + Exterior)</option>
+              <option>Ceramic Coating</option>
+              <option>Fleet Maintenance Program</option>
+              <option>FBO Partnership</option>
+              <option>Other / Custom Request</option>
+            </select>
           </div>
-        </div>
-        <div class="testimonial-card glass reveal-up" style="animation-delay:.24s">
-          <div class="stars">★★★★★</div>
-          <blockquote>"From the moment they arrived to when they handed back the keys, SkyLux was professional, efficient, and meticulous. My Bell 429 looked like it just came off the production line."</blockquote>
-          <div class="testimonial-author">
-            <div class="author-avatar">DL</div>
-            <div>
-              <div class="author-name">David Lassiter</div>
-              <div class="author-role">Helicopter Owner, DL Holdings</div>
-            </div>
+          <div class="fg">
+            <label for="f-airport">Airport / Location</label>
+            <input type="text" id="f-airport" name="airport" placeholder="e.g. Van Nuys (VNY)">
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICE AREAS -->
-  <section id="areas" class="section areas-section">
-    <div class="container">
-      <div class="section-header reveal-up">
-        <p class="eyebrow-gold">Service Area</p>
-        <h2 class="section-title">Greater Los Angeles<br>& Southern California</h2>
-        <div class="gold-rule"></div>
-        <p class="section-intro">Based at Van Nuys Airport — the world's busiest general aviation airport. Serving all major GA airports and FBOs across the region.</p>
-      </div>
-      <div class="airports-grid reveal-up">
-        <div class="airport-item primary">
-          <span class="airport-code">KVNY</span>
-          <span class="airport-name">Van Nuys Airport</span>
-          <span class="airport-tag">Headquarters</span>
-        </div>
-        <div class="airport-item"><span class="airport-code">KBUR</span><span class="airport-name">Hollywood Burbank</span></div>
-        <div class="airport-item"><span class="airport-code">KSMO</span><span class="airport-name">Santa Monica</span></div>
-        <div class="airport-item"><span class="airport-code">KLGB</span><span class="airport-name">Long Beach</span></div>
-        <div class="airport-item"><span class="airport-code">KHHR</span><span class="airport-name">Hawthorne</span></div>
-        <div class="airport-item"><span class="airport-code">KTOA</span><span class="airport-name">Torrance</span></div>
-        <div class="airport-item"><span class="airport-code">KCMA</span><span class="airport-name">Camarillo</span></div>
-        <div class="airport-item"><span class="airport-code">KSNA</span><span class="airport-name">John Wayne / Orange County</span></div>
-        <div class="airport-item"><span class="airport-code">KONT</span><span class="airport-name">Ontario International</span></div>
-        <div class="airport-item"><span class="airport-code">KFUL</span><span class="airport-name">Fullerton</span></div>
-        <div class="airport-item"><span class="airport-code">KWHP</span><span class="airport-name">Whiteman</span></div>
-        <div class="airport-item"><span class="airport-code">KEMF</span><span class="airport-name">El Monte</span></div>
-      </div>
-      <p class="areas-note reveal-up">Don't see your airport? <a href="#contact">Contact us</a> — we regularly expand our coverage for fleet contract clients.</p>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section contact-section">
-    <div class="contact-bg"></div>
-    <div class="container">
-      <div class="contact-grid">
-        <div class="contact-left reveal-up">
-          <p class="eyebrow-gold">Contact</p>
-          <h2 class="section-title title-light">Request a Quote<br>or Schedule Service</h2>
-          <div class="gold-rule"></div>
-          <p class="contact-body">Every engagement begins with a private consultation. Tell us about your aircraft and requirements — we will respond within 2 business hours.</p>
-
-          <div class="contact-details">
-            <div class="contact-item">
-              <span class="contact-label">Headquarters</span>
-              <span class="contact-val">Van Nuys Airport (KVNY)<br>Los Angeles, California</span>
-            </div>
-            <div class="contact-item">
-              <span class="contact-label">Email</span>
-              <a href="mailto:info@skyluxaircraftcare.com" class="contact-val contact-link">info@skyluxaircraftcare.com</a>
-            </div>
-            <div class="contact-item">
-              <span class="contact-label">Phone</span>
-              <a href="tel:+18007595893" class="contact-val contact-link">+1 (800) SKY-LUXE</a>
-            </div>
-            <div class="contact-item">
-              <span class="contact-label">Hours</span>
-              <span class="contact-val">Mon–Fri 6AM–8PM &nbsp;·&nbsp; Sat 7AM–5PM<br>Sunday by appointment</span>
-            </div>
-          </div>
-
-          <div class="emergency-strip">
-            <span class="emg-dot"></span>
-            <div>
-              <strong>24 / 7 Emergency Service</strong>
-              <p>Rapid-response detailing for AOG, VVIP, and time-critical charter operations.</p>
-            </div>
-          </div>
-        </div>
-
-        <form class="contact-form glass reveal-up" id="contact-form" novalidate>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="fname">First Name *</label>
-              <input type="text" id="fname" name="fname" placeholder="James" required>
-            </div>
-            <div class="form-group">
-              <label for="lname">Last Name *</label>
-              <input type="text" id="lname" name="lname" placeholder="Morrison" required>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="email">Email Address *</label>
-            <input type="email" id="email" name="email" placeholder="james@company.com" required>
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="aircraft">Aircraft Type *</label>
-              <select id="aircraft" name="aircraft" required>
-                <option value="" disabled selected>Select type…</option>
-                <option>Private Jet — Light</option>
-                <option>Private Jet — Mid-Size</option>
-                <option>Private Jet — Heavy / Ultra-Long Range</option>
-                <option>Turboprop</option>
-                <option>Helicopter</option>
-                <option>Fleet (Multiple Aircraft)</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="service">Service *</label>
-              <select id="service" name="service" required>
-                <option value="" disabled selected>Select service…</option>
-                <option>Interior Care</option>
-                <option>Exterior Care</option>
-                <option>Ceramic Coating</option>
-                <option>Paint Correction</option>
-                <option>Fleet Maintenance Program</option>
-                <option>Full Detail Package</option>
-                <option>Emergency / Urgent Service</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="airport">Airport / Location</label>
-            <input type="text" id="airport" name="airport" placeholder="e.g. KVNY — Van Nuys, CA">
-          </div>
-          <div class="form-group">
-            <label for="message">Additional Details</label>
-            <textarea id="message" name="message" rows="4" placeholder="Aircraft registration, preferred dates, or any special requirements…"></textarea>
+          <div class="fg">
+            <label for="f-msg">Message</label>
+            <textarea id="f-msg" name="message" placeholder="Tell us about your aircraft and what you need..."></textarea>
           </div>
           <button type="submit" class="btn btn-gold btn-full">Submit Request &rarr;</button>
-          <p class="form-note">We respond within 2 business hours. All inquiries are treated with absolute discretion.</p>
-          <div class="form-success" id="form-success">
-            <span class="success-icon">✦</span>
-            <div>
-              <strong>Your request has been received.</strong>
-              <p>A member of our team will be in touch shortly.</p>
-            </div>
-          </div>
+          <p class="form-note">We respond within 2 business hours. All inquiries are strictly confidential.</p>
         </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-inner">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <div class="footer-logo">
-            <span class="logo-sky">Sky</span><span class="logo-lux">Lux<span class="logo-sparkle">✦</span></span>
-          </div>
-          <span class="footer-logo-sub">PRIVATE AVIATION CARE</span>
-          <p class="footer-tagline">Elevating Aircraft Care.</p>
-          <p class="footer-desc">Luxury aircraft detailing, protection, and white-glove maintenance for discerning owners and operators. Based at Van Nuys Airport, Los Angeles.</p>
-          <div class="footer-social">
-            <a href="#" aria-label="LinkedIn" class="social-link">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="15" height="15"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-            </a>
-            <a href="#" aria-label="Instagram" class="social-link">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="15" height="15"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            </a>
+        <div id="form-success" role="alert">
+          <span class="si">✦</span>
+          <div>
+            <strong>Request Received</strong>
+            <p>Thank you. A member of our team will reach out within 2 hours to confirm your booking.</p>
           </div>
         </div>
-        <div class="footer-col">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="#services">Interior Care</a></li>
-            <li><a href="#services">Exterior Care</a></li>
-            <li><a href="#services">Ceramic Coating</a></li>
-            <li><a href="#services">Paint Correction</a></li>
-            <li><a href="#services">Leather Conditioning</a></li>
-            <li><a href="#services">Fleet Programs</a></li>
-            <li><a href="#services">Mobile Service</a></li>
-          </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================
+     FOOTER
+==================================================== -->
+<footer>
+  <div class="footer-wrap">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <div class="fbrand-logo">
+          <div class="fbrand-wordmark">
+            <span class="fbrand-sky">Sky</span><span class="fbrand-lux">Lux</span>
+          </div>
+          <span class="fbrand-sub">Private Aviation Care</span>
         </div>
-        <div class="footer-col">
-          <h4>Company</h4>
-          <ul>
-            <li><a href="#why">Why SkyLux</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#areas">Service Areas</a></li>
-            <li><a href="#contact">Careers</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <ul>
-            <li><a href="#contact">Request a Quote</a></li>
-            <li><a href="#contact">Schedule Service</a></li>
-            <li><a href="tel:+18007595893">Emergency Line</a></li>
-            <li><a href="mailto:info@skyluxaircraftcare.com">Email Us</a></li>
-          </ul>
+        <p class="fbrand-tagline">Elevating Aircraft Care.</p>
+        <p class="fbrand-desc">White-glove aviation detailing, protection, and maintenance for discerning aircraft owners and operators across Southern California.</p>
+        <div class="fsocial">
+          <a href="#" class="fsoc" aria-label="Instagram">IG</a>
+          <a href="#" class="fsoc" aria-label="LinkedIn">LI</a>
+          <a href="#" class="fsoc" aria-label="Facebook">FB</a>
         </div>
       </div>
-      <div class="footer-rule"></div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 SkyLux Private Aviation Care. All rights reserved. Van Nuys Airport (KVNY), Los Angeles, CA.</p>
-        <p class="footer-cert">FAA-Conscious Products &nbsp;✦&nbsp; Fully Insured &amp; Bonded &nbsp;✦&nbsp; White-Glove Service</p>
+
+      <div class="fcol">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Interior Care</a></li>
+          <li><a href="#services">Exterior Care</a></li>
+          <li><a href="#services">Fleet Programs</a></li>
+          <li><a href="#services">Ceramic Coating</a></li>
+          <li><a href="#services">FBO Partnerships</a></li>
+        </ul>
+      </div>
+
+      <div class="fcol">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#why">Why SkyLux</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#areas">Service Areas</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="fcol">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:info@skyluxaviationcare.com">info@skyluxaviationcare.com</a></li>
+          <li><a href="#areas">Van Nuys Airport (VNY)</a></li>
+          <li><a href="#areas">Los Angeles, CA</a></li>
+          <li><a href="#contact">Request a Quote</a></li>
+        </ul>
       </div>
     </div>
-  </footer>
 
-  <a href="#contact" class="floating-cta" aria-label="Request a quote">
-    <span class="fc-dot"></span>
-    <span>Request a Quote</span>
-  </a>
+    <div class="footer-rule"></div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 SkyLux Private Aviation Care. All rights reserved.</p>
+      <p class="fcert">Premium Aviation Care &nbsp;·&nbsp; Van Nuys, CA &nbsp;·&nbsp; By Appointment</p>
+    </div>
+  </div>
+</footer>
 
-  <script src="assets/js/main.js"></script>
+<!-- Floating CTA -->
+<a href="#contact" class="float-cta" id="float-cta" aria-label="Request a quote">
+  <span class="float-dot"></span>
+  Request a Quote
+</a>
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>
