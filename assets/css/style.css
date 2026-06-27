@@ -179,13 +179,12 @@ input,select,textarea{font-family:inherit;color:inherit}
 .gbtn:last-child{border-right:none}
 .gbtn.active{background:var(--white);color:var(--black)}
 .gbtn:hover:not(.active){color:var(--white)}
-.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:260px;gap:2px;border-radius:3px;overflow:hidden}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:300px;gap:3px;border-radius:3px;overflow:hidden}
 .gitem{position:relative;overflow:hidden;cursor:pointer;background:var(--black-4)}
 .gitem.wide{grid-column:span 2}
-.gitem-img{position:absolute;inset:0;background:linear-gradient(135deg,#111 0%,#1a1a1a 100%);display:flex;align-items:center;justify-content:center}
-.gitem-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
-.gitem:hover .gitem-img img{transform:scale(1.05)}
-.gitem-placeholder{font-family:var(--serif);font-size:.95rem;font-style:italic;color:var(--w20);letter-spacing:.06em}
+.gitem-img{position:absolute;inset:0;background:#111;display:flex;align-items:center;justify-content:center}
+.gitem-img img{width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease),filter .7s ease;filter:brightness(.92)}
+.gitem:hover .gitem-img img{transform:scale(1.06);filter:brightness(1.02)}
 .gitem-cap{position:absolute;bottom:0;left:0;right:0;padding:18px 20px 16px;background:linear-gradient(0deg,rgba(10,10,10,.9) 0%,transparent 100%);display:flex;align-items:flex-end;justify-content:space-between;transform:translateY(100%);transition:transform .3s ease}
 .gitem:hover .gitem-cap{transform:none}
 .gitem-label{font-size:.76rem;font-weight:500;color:var(--white)}
