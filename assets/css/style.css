@@ -350,6 +350,9 @@ footer{background:#060606;border-top:1px solid var(--w08)}
   .nav-links a{display:block;padding:16px 24px;border-bottom:1px solid var(--w06);font-size:.72rem}
   .nav-cta-btn{display:none}
   .hamburger{display:flex}
+  .nav-inner{justify-content:center;position:relative}
+  .nav-logo{align-items:center}
+  .hamburger{position:absolute;right:20px}
 
   /* Hero — stacked */
   .hero{flex-direction:column;height:auto;min-height:100vh}
