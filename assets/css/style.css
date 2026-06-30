@@ -85,6 +85,10 @@ input,select,textarea{font-family:inherit;color:inherit}
 .logo-divider{width:100%;height:1px;background:var(--w10);margin:5px 0 4px}
 .logo-sub{font-family:var(--display);font-size:.38rem;font-weight:500;letter-spacing:.28em;text-transform:uppercase;color:var(--w40)}
 
+/* ── LOGO SVG ── */
+.nav-logo-svg{display:block;height:48px;width:auto}
+.footer-logo-svg{display:block;height:72px;width:auto;margin-bottom:16px}
+
 /* ── NAV LINKS ── */
 .nav-links{display:flex;align-items:center;gap:36px;margin-left:auto}
 .nav-links a{font-family:var(--display);font-size:.62rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--w40);transition:color .2s;white-space:nowrap}
