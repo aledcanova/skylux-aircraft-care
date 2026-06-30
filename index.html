@@ -26,11 +26,35 @@
 <nav id="navbar">
   <div class="nav-inner">
     <a href="#" class="nav-logo" aria-label="SkyLux Home">
-      <div class="logo-lockup">
-        <span class="logo-sky">Sky</span><span class="logo-lux">Lux</span>
-      </div>
-      <span class="logo-divider"></span>
-      <span class="logo-sub">Private Aviation Care</span>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 130" class="nav-logo-svg" aria-hidden="true">
+        <defs>
+          <radialGradient id="nv-sg" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#f8edcc"/>
+            <stop offset="70%" stop-color="#c9a96e" stop-opacity="0.4"/>
+            <stop offset="100%" stop-color="#c9a96e" stop-opacity="0"/>
+          </radialGradient>
+          <filter id="nv-gf" x="-100%" y="-100%" width="300%" height="300%">
+            <feGaussianBlur stdDeviation="2.5" result="b"/>
+            <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+        <text x="150" y="76" font-family="'Cormorant Garamond', Georgia, serif" font-size="78" font-weight="300" fill="white" text-anchor="middle">SkyLux</text>
+        <line x1="245" y1="20" x2="188" y2="56" stroke="#c9a96e" stroke-width="1.1" opacity="0.5" stroke-linecap="round"/>
+        <g transform="translate(247,18)" filter="url(#nv-gf)">
+          <line x1="0" y1="-15" x2="0" y2="15" stroke="#f8edcc" stroke-width="0.9" stroke-linecap="round"/>
+          <line x1="-15" y1="0" x2="15" y2="0" stroke="#f8edcc" stroke-width="0.9" stroke-linecap="round"/>
+          <line x1="-8" y1="-8" x2="8" y2="8" stroke="#f8edcc" stroke-width="0.4" opacity="0.5" stroke-linecap="round"/>
+          <line x1="8" y1="-8" x2="-8" y2="8" stroke="#f8edcc" stroke-width="0.4" opacity="0.5" stroke-linecap="round"/>
+          <circle cx="0" cy="0" r="2.2" fill="white"/>
+          <circle cx="0" cy="0" r="8" fill="url(#nv-sg)"/>
+        </g>
+        <line x1="22" y1="92" x2="120" y2="92" stroke="rgba(255,255,255,0.55)" stroke-width="0.5"/>
+        <g transform="translate(150,88)">
+          <path d="M0,-10 C1.3,-7 1.6,-2.5 1.6,0.5 L15,7 L15,10 L1.6,7.5 L2.2,13 L5.5,16 L5.5,17.5 L0,16.5 L-5.5,17.5 L-5.5,16 L-2.2,13 L-1.6,7.5 L-15,10 L-15,7 L-1.6,0.5 C-1.6,-2.5 -1.3,-7 0,-10 Z" fill="white" opacity="0.85"/>
+        </g>
+        <line x1="180" y1="92" x2="278" y2="92" stroke="rgba(255,255,255,0.55)" stroke-width="0.5"/>
+        <text x="150" y="115" font-family="'Inter', Helvetica, sans-serif" font-size="9" font-weight="300" fill="rgba(255,255,255,0.8)" text-anchor="middle" letter-spacing="4.5">PRIVATE AVIATION CARE</text>
+      </svg>
     </a>
     <ul class="nav-links" id="nav-links">
       <li><a href="#services">Services</a></li>
@@ -385,9 +409,35 @@
   <div class="footer-wrap">
     <div class="footer-main">
       <div class="footer-brand">
-        <div class="fbrand-wordmark">SkyLux</div>
-        <span class="fbrand-sub-line"></span>
-        <span class="fbrand-sub">Private Aviation Care</span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 130" class="footer-logo-svg" aria-label="SkyLux Private Aviation Care">
+          <defs>
+            <radialGradient id="ft-sg" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#f8edcc"/>
+              <stop offset="70%" stop-color="#c9a96e" stop-opacity="0.4"/>
+              <stop offset="100%" stop-color="#c9a96e" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="ft-gf" x="-100%" y="-100%" width="300%" height="300%">
+              <feGaussianBlur stdDeviation="2.5" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+          <text x="150" y="76" font-family="'Cormorant Garamond', Georgia, serif" font-size="78" font-weight="300" fill="white" text-anchor="middle">SkyLux</text>
+          <line x1="245" y1="20" x2="188" y2="56" stroke="#c9a96e" stroke-width="1.1" opacity="0.5" stroke-linecap="round"/>
+          <g transform="translate(247,18)" filter="url(#ft-gf)">
+            <line x1="0" y1="-15" x2="0" y2="15" stroke="#f8edcc" stroke-width="0.9" stroke-linecap="round"/>
+            <line x1="-15" y1="0" x2="15" y2="0" stroke="#f8edcc" stroke-width="0.9" stroke-linecap="round"/>
+            <line x1="-8" y1="-8" x2="8" y2="8" stroke="#f8edcc" stroke-width="0.4" opacity="0.5" stroke-linecap="round"/>
+            <line x1="8" y1="-8" x2="-8" y2="8" stroke="#f8edcc" stroke-width="0.4" opacity="0.5" stroke-linecap="round"/>
+            <circle cx="0" cy="0" r="2.2" fill="white"/>
+            <circle cx="0" cy="0" r="8" fill="url(#ft-sg)"/>
+          </g>
+          <line x1="22" y1="92" x2="120" y2="92" stroke="rgba(255,255,255,0.55)" stroke-width="0.5"/>
+          <g transform="translate(150,88)">
+            <path d="M0,-10 C1.3,-7 1.6,-2.5 1.6,0.5 L15,7 L15,10 L1.6,7.5 L2.2,13 L5.5,16 L5.5,17.5 L0,16.5 L-5.5,17.5 L-5.5,16 L-2.2,13 L-1.6,7.5 L-15,10 L-15,7 L-1.6,0.5 C-1.6,-2.5 -1.3,-7 0,-10 Z" fill="white" opacity="0.85"/>
+          </g>
+          <line x1="180" y1="92" x2="278" y2="92" stroke="rgba(255,255,255,0.55)" stroke-width="0.5"/>
+          <text x="150" y="115" font-family="'Inter', Helvetica, sans-serif" font-size="9" font-weight="300" fill="rgba(255,255,255,0.8)" text-anchor="middle" letter-spacing="4.5">PRIVATE AVIATION CARE</text>
+        </svg>
         <p class="fbrand-tagline">Elevating Aircraft Care.</p>
         <p class="fbrand-desc">White-glove aviation detailing, protection, and maintenance for discerning aircraft owners and operators across Southern California.</p>
         <div class="fsocial">
