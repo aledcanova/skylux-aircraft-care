@@ -28,7 +28,7 @@
   --serif:     'Cormorant Garamond', Georgia, serif;
   --sans:      'Inter', system-ui, sans-serif;
   --display:   'Inter', system-ui, sans-serif;
-  --nav:       108px;
+  --nav:       148px;
   --ease:      cubic-bezier(.4,0,.2,1);
 }
 
@@ -86,7 +86,7 @@ input,select,textarea{font-family:inherit;color:inherit}
 .logo-sub{font-family:var(--display);font-size:.38rem;font-weight:500;letter-spacing:.28em;text-transform:uppercase;color:var(--w40)}
 
 /* ── LOGO SVG ── */
-.nav-logo-svg{display:block;height:96px;width:auto}
+.nav-logo-svg{display:block;height:140px;width:auto}
 .footer-logo-svg{display:block;height:72px;width:auto;margin-bottom:16px}
 
 /* ── NAV LINKS ── */
