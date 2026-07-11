@@ -70,15 +70,30 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ── Contact form ── */
   const form    = document.getElementById('contact-form');
   const success = document.getElementById('form-success');
-  form?.addEventListener('submit', e => {
+  form?.addEventListener('submit', async e => {
     e.preventDefault();
     const btn = form.querySelector('[type="submit"]');
+    const original = btn.textContent;
     btn.textContent = 'Sending…';
     btn.disabled = true;
-    setTimeout(() => {
-      form.style.display = 'none';
-      success.classList.add('visible');
-    }, 900);
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(form)
+      });
+      const data = await res.json();
+      if (data.success) {
+        form.style.display = 'none';
+        success.classList.add('visible');
+      } else {
+        throw new Error(data.message || 'Submission failed');
+      }
+    } catch (err) {
+      btn.textContent = 'Try Again';
+      btn.disabled = false;
+      alert('Sorry, something went wrong sending your request. Please email us directly at Info@skylux-aviation.com or call +1 (213) 696-5737.');
+    }
   });
 
 });
