@@ -49,7 +49,7 @@ oversaturated, raw meat on the floor, modern kitchen, gas grill
 Gere 4 variações, escolha a melhor e salve como `seu-valdir-referencia.png` nesta pasta:
 
 ```
-Portrait of [BLOCO DE PERSONAGEM], standing in front of [BLOCO DE CENÁRIO],
+Portrait of [BLOCO DE PERSONAGEM], standing [BLOCO DE CENÁRIO],
 looking at the camera with a gentle smile, medium shot from the waist up,
 [BLOCO DE ESTILO]
 ```

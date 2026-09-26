@@ -1,0 +1,281 @@
+PROMPTS — VÍDEO 001: PICANHA GAÚCHA (SEU VALDIR)
+======================================================================
+
+NEGATIVE PROMPT (usar em todas as gerações):
+cartoon, anime, 3d render, CGI look, plastic skin, deformed hands, extra fingers, missing fingers, distorted face, text, subtitles, watermark, logo, blurry, oversaturated, raw meat on the floor, modern kitchen, gas grill
+
+======================================================================
+00 · IMAGEM DE REFERÊNCIA DO PERSONAGEM (gerar primeiro)
+======================================================================
+
+IMAGEM:
+Portrait of Seu Valdir, a 58-year-old Brazilian gaucho barbecue master from Rio Grande do Sul, weathered sun-tanned skin, thick salt-and-pepper mustache, short gray stubble, warm brown eyes with deep crow's feet, friendly confident expression, wearing a black felt gaucho hat with a flat wide brim, a red silk neckerchief tied at the neck, a light beige linen shirt with sleeves rolled to the elbows, dark brown baggy bombacha trousers, a wide brown leather belt decorated with silver coins, and worn brown leather boots, standing inside a rustic gaucho galpão (open wooden barn) with an open side facing the green rolling pampas grassland, a long brick barbecue pit with glowing charcoal embers, long iron skewers, a thick wooden cutting board, a chimarrão gourd with a silver bombilla on the table, warm late-afternoon golden hour sunlight, light smoke drifting, looking at the camera with a gentle smile, medium shot from the waist up, cinematic food documentary, photorealistic, shot on ARRI Alexa, 35mm lens, shallow depth of field, natural warm color grading, 16:9, highly detailed textures
+
+======================================================================
+Abertura (0:00 – 0:07) · sem narração
+======================================================================
+
+--- TOMADA A1 (4s) ---
+IMAGEM:
+Extreme close-up of thick picanha pieces bent into C shapes on a long iron skewer over glowing charcoal embers, golden crispy fat cap, a drop of melted fat falling onto the embers, cinematic food documentary, photorealistic, shot on ARRI Alexa, 35mm lens, shallow depth of field, natural warm color grading, 16:9, highly detailed textures
+MOVIMENTO:
+slow push-in, a drop of fat falls and makes a small flame flare up, sparks rising, smoke curling, sizzling
+
+--- TOMADA A2 (3s) ---
+IMAGEM:
+Wide establishing shot of a rustic wooden gaucho galpão alone in the middle of green rolling pampas grassland at golden hour, thin smoke rising from the chimney, horses grazing in the distance, cinematic food documentary, photorealistic, shot on ARRI Alexa, 35mm lens, shallow depth of field, natural warm color grading, 16:9, highly detailed textures
+MOVIMENTO:
+slow aerial drone glide towards the galpão, grass moving with the wind
+
+======================================================================
+Cena 1 (0:07 – 0:21) · Apresentação
+======================================================================
+
+--- TOMADA 1A (7s) ---
+IMAGEM:
+Seu Valdir, a 58-year-old Brazilian gaucho barbecue master from Rio Grande do Sul, weathered sun-tanned skin, thick salt-and-pepper mustache, short gray stubble, warm brown eyes with deep crow's feet, friendly confident expression, wearing a black felt gaucho hat with a flat wide brim, a red silk neckerchief tied at the neck, a light beige linen shirt with sleeves rolled to the elbows, dark brown baggy bombacha trousers, a wide brown leather belt decorated with silver coins, and worn brown leather boots, stepping into the galpão entrance, touching the brim of his hat in greeting, warm closed-mouth smile, medium shot, inside a rustic gaucho galpão (open wooden barn) with an open side facing the green rolling pampas grassland, a long brick barbecue pit with glowing charcoal embers, long iron skewers, a thick wooden cutting board, a chimarrão gourd with a silver bombilla on the table, warm late-afternoon golden hour sunlight, light smoke drifting, cinematic food documentary, photorealistic, shot on ARRI Alexa, 35mm lens, shallow depth of field, natural warm color grading, 16:9, highly detailed textures
+MOVIMENTO:
+he walks two steps towards the camera and tips his hat with a friendly nod, mouth closed, smiling, camera slowly pulls back
+
+--- TOMADA 1B (7s) ---
+IMAGEM:
+Seu Valdir, a 58-year-old Brazilian gaucho barbecue master from Rio Grande do Sul, weathered sun-tanned skin, thick salt-and-pepper mustache, short gray stubble, warm brown eyes with deep crow's feet, friendly confident expression, wearing a black felt gaucho hat with a flat wide brim, a red silk neckerchief tied at the neck, a light beige linen shirt with sleeves rolled to the elbows, dark brown baggy bombacha trousers, a wide brown leather belt decorated with silver coins, and worn brown leather boots, standing beside the brick barbecue pit, one hand open in a welcoming gesture, pampas visible behind him, medium wide shot, inside a rustic gaucho galpão (open wooden barn) with an open side facing the green rolling pampas grassland, a long brick barbecue pit with glowing charcoal embers, long iron skewers, a thick wooden cutting board, a chimarrão gourd with a silver bombilla on the table, warm late-afternoon golden hour sunlight, light smoke drifting, cinematic food documentary, photorealistic, shot on ARRI Alexa, 35mm lens, shallow depth of field, natural warm color grading, 16:9, highly detailed textures
+MOVIMENTO:
+he opens his arm in a welcoming gesture and looks proudly around the galpão, gentle smile, slow lateral camera move
+
+======================================================================
+Cena 2 (0:21 – 0:32) · O tema do vídeo
+======================================================================
+
+--- TOMADA 2A (5s) ---
+IMAGEM:
+Seu Valdir, a 58-year-old Brazilian gaucho barbecue master from Rio Grande do Sul, weathered sun-tanned skin, thick salt-and-pepper mustache, short gray stubble, warm brown eyes with deep crow's feet, friendly confident expression, wearing a black felt gaucho hat with a flat wide brim, a red silk neckerchief tied at the neck, a light beige linen shirt with sleeves rolled to the elbows, dark brown baggy bombacha trousers, a wide brown leather belt decorated with silver coins, and worn brown leather boots, holding up a whole raw picanha with a thick white fat cap with both hands over a wooden cutting board, proud expression, inside a rustic gaucho galpão (open wooden barn) with an open side facing the green rolling pampas grassland, a long brick barbecue pit with glowing charcoal embers, long iron skewers, a thick wooden cutting board, a chimarrão gourd with a silver bombilla on the table, warm late-afternoon golden hour sunlight, light smoke drifting, cinematic food documentary, photorealistic, shot on ARRI Alexa, 35mm lens, shallow depth of field, natural warm color grading, 16:9, highly detailed textures
+MOVIMENTO:
+he lifts the picanha slightly towards the camera with a proud smile, camera slowly pushes in
+
+--- TOMADA 2B (6s) ---
+IMAGEM:
+Seu Valdir, a 58-year-old Brazilian gaucho barbecue master from Rio Grande do Sul, weathered sun-tanned skin, thick salt-and-pepper mustache, short gray stubble, warm brown eyes with deep crow's feet, friendly confident expression, wearing a black felt gaucho hat with a flat wide brim, a red silk neckerchief tied at the neck, a light beige linen shirt with sleeves rolled to the elbows, dark brown baggy bombacha trousers, a wide brown leather belt decorated with silver coins, and worn brown leather boots, sitting on a wooden bench inside the galpão, sipping chimarrão from a gourd with a silver bombilla, relaxed, inside a rustic gaucho galpão (open wooden barn) with an open side facing the green rolling pampas grassland, a long brick barbecue pit with glowing charcoal embers, long iron skewers, a thick wooden cutting board, a chimarrão gourd with a silver bombilla on the table, warm late-afternoon golden hour sunlight, light smoke drifting, cinematic food documentary, photorealistic, shot on ARRI Alexa, 35mm lens, shallow depth of field, natural warm color grading, 16:9, highly detailed textures
+MOVIMENTO:
+he sips the chimarrão calmly and lowers the gourd, relaxed smile, steam from a kettle beside him, static camera
+
+======================================================================
+Cena 3 (0:32 – 0:54) · Escolhendo a picanha
+======================================================================
+
+--- TOMADA 3A (5s) ---
+IMAGEM:
+Top-down shot of a whole raw picanha (beef rump cap), triangular shape, deep red meat with an even thick white fat cap, on a thick rustic wooden cutting board, coarse salt bowl and a butcher knife beside it, cinematic food documentary, photorealistic, shot on ARRI Alexa, 35mm lens, shallow depth of field, natural warm color grading, 16:9, highly detailed textures
+MOVIMENTO:
+slow overhead rotation of the camera around the cutting board
+
+--- TOMADA 3B (6s) ---
+IMAGEM:
+Close-up of weathered hands of an old gaucho placing a whole raw picanha on a vintage brass kitchen scale on a wooden table, inside a rustic gaucho galpão (open wooden barn) with an open side facing the green rolling pampas grassland, a long brick barbecue pit with glowing charcoal embers, long iron skewers, a thick wooden cutting board, a chimarrão gourd with a silver bombilla on the table, warm late-afternoon golden hour sunlight, light smoke drifting, cinematic food documentary, photorealistic, shot on ARRI Alexa, 35mm lens, shallow depth of field, natural warm color grading, 16:9, highly detailed textures
+MOVIMENTO:
+the hands gently place the picanha on the scale, the scale needle moves and settles, shallow depth of field
+
+--- TOMADA 3C (6s) ---
+IMAGEM:
+Macro shot of the thick white fat cap of a raw picanha, about one centimeter thick, firm and clean, showing the layer between fat and red meat, cinematic food documentary, photorealistic, shot on ARRI Alexa, 35mm lens, shallow depth of field, natural warm color grading, 16:9, highly detailed textures
+MOVIMENTO:
+slow macro slide along the fat cap edge, light reflecting on the fat
+
+--- TOMADA 3D (5s) ---
+IMAGEM:
+Seu Valdir, a 58-year-old Brazilian gaucho barbecue master from Rio Grande do Sul, weathered sun-tanned skin, thick salt-and-pepper mustache, short gray stubble, warm brown eyes with deep crow's feet, friendly confident expression, wearing a black felt gaucho hat with a flat wide brim, a red silk neckerchief tied at the neck, a light beige linen shirt with sleeves rolled to the elbows, dark brown baggy bombacha trousers, a wide brown leather belt decorated with silver coins, and worn brown leather boots, looking at the camera and wagging his index finger in a playful "no" gesture, eyebrows raised, closed-mouth smile, medium close-up, inside a rustic gaucho galpão (open wooden barn) with an open side facing the green rolling pampas grassland, a long brick barbecue pit with glowing charcoal embers, long iron skewers, a thick wooden cutting board, a chimarrão gourd with a silver bombilla on the table, warm late-afternoon golden hour sunlight, light smoke drifting, cinematic food documentary, photorealistic, shot on ARRI Alexa, 35mm lens, shallow depth of field, natural warm color grading, 16:9, highly detailed textures
+MOVIMENTO:
+he wags his finger side to side in a playful warning, then chuckles, static camera
+
+======================================================================
+Cena 4 (0:54 – 1:14) · O fogo
+======================================================================
+
+--- TOMADA 4A (6s) ---
+IMAGEM:
+Seu Valdir, a 58-year-old Brazilian gaucho barbecue master from Rio Grande do Sul, weathered sun-tanned skin, thick salt-and-pepper mustache, short gray stubble, warm brown eyes with deep crow's feet, friendly confident expression, wearing a black felt gaucho hat with a flat wide brim, a red silk neckerchief tied at the neck, a light beige linen shirt with sleeves rolled to the elbows, dark brown baggy bombacha trousers, a wide brown leather belt decorated with silver coins, and worn brown leather boots, kneeling at a long brick barbecue pit, arranging split eucalyptus firewood and lump charcoal, inside a rustic gaucho galpão (open wooden barn) with an open side facing the green rolling pampas grassland, a long brick barbecue pit with glowing charcoal embers, long iron skewers, a thick wooden cutting board, a chimarrão gourd with a silver bombilla on the table, warm late-afternoon golden hour sunlight, light smoke drifting, cinematic food documentary, photorealistic, shot on ARRI Alexa, 35mm lens, shallow depth of field, natural warm color grading, 16:9, highly detailed textures
+MOVIMENTO:
+he places a log on the pile and lights it, flames start to rise, camera slowly moves in
+
+--- TOMADA 4B (7s) ---
+IMAGEM:
+Close-up of tall orange flames burning firewood and charcoal in a brick barbecue pit, cinematic food documentary, photorealistic, shot on ARRI Alexa, 35mm lens, shallow depth of field, natural warm color grading, 16:9, highly detailed textures
+MOVIMENTO:
+time-lapse, the flames slowly die down and the wood turns into glowing red embers
+
+--- TOMADA 4C (6s) ---
+IMAGEM:
+Macro shot of charcoal embers covered in a thin layer of white ash with bright orange glow underneath, cinematic food documentary, photorealistic, shot on ARRI Alexa, 35mm lens, shallow depth of field, natural warm color grading, 16:9, highly detailed textures
+MOVIMENTO:
+embers pulsing with light, a soft breeze makes the glow intensify, tiny sparks rising
+
+======================================================================
+Cena 5 (1:14 – 1:24) · O truque da mão
+======================================================================
+
+--- TOMADA 5A (10s) ---
+IMAGEM:
+Seu Valdir, a 58-year-old Brazilian gaucho barbecue master from Rio Grande do Sul, weathered sun-tanned skin, thick salt-and-pepper mustache, short gray stubble, warm brown eyes with deep crow's feet, friendly confident expression, wearing a black felt gaucho hat with a flat wide brim, a red silk neckerchief tied at the neck, a light beige linen shirt with sleeves rolled to the elbows, dark brown baggy bombacha trousers, a wide brown leather belt decorated with silver coins, and worn brown leather boots, holding his open palm flat above the glowing embers at skewer height, concentrated expression, side view, inside a rustic gaucho galpão (open wooden barn) with an open side facing the green rolling pampas grassland, a long brick barbecue pit with glowing charcoal embers, long iron skewers, a thick wooden cutting board, a chimarrão gourd with a silver bombilla on the table, warm late-afternoon golden hour sunlight, light smoke drifting, cinematic food documentary, photorealistic, shot on ARRI Alexa, 35mm lens, shallow depth of field, natural warm color grading, 16:9, highly detailed textures
+MOVIMENTO:
+he holds his palm steady over the heat for a few seconds, then pulls his hand back, shakes it lightly and nods with a satisfied smile, mouth closed
+
+======================================================================
+Cena 6 (1:24 – 1:39) · O corte em bifes
+======================================================================
+
+--- TOMADA 6A (8s) ---
+IMAGEM:
+Overhead shot of weathered hands cutting a raw picanha into thick steaks with a large butcher knife on a wooden cutting board, cutting along the grain, cinematic food documentary, photorealistic, shot on ARRI Alexa, 35mm lens, shallow depth of field, natural warm color grading, 16:9, highly detailed textures
+MOVIMENTO:
+the knife slices slowly and cleanly through the meat, one thick steak falls to the side, steady overhead camera
+
+--- TOMADA 6B (7s) ---
+IMAGEM:
+Three thick raw picanha steaks, about 5 cm wide each, lined up on a wooden cutting board, fat cap on top of each, cinematic food documentary, photorealistic, shot on ARRI Alexa, 35mm lens, shallow depth of field, natural warm color grading, 16:9, highly detailed textures
+MOVIMENTO:
+slow dolly along the three steaks, soft golden light
+
+======================================================================
+Cena 7 (1:39 – 1:49) · Dobrar e espetar
+======================================================================
+
+--- TOMADA 7A (6s) ---
+IMAGEM:
+Close-up of hands folding a thick raw picanha steak into a C shape with the fat cap on the outside and pushing a long iron skewer through the middle, cinematic food documentary, photorealistic, shot on ARRI Alexa, 35mm lens, shallow depth of field, natural warm color grading, 16:9, highly detailed textures
+MOVIMENTO:
+the hands bend the steak into a half-moon and slide the skewer through it
+
+--- TOMADA 7B (4s) ---
+IMAGEM:
+Seu Valdir, a 58-year-old Brazilian gaucho barbecue master from Rio Grande do Sul, weathered sun-tanned skin, thick salt-and-pepper mustache, short gray stubble, warm brown eyes with deep crow's feet, friendly confident expression, wearing a black felt gaucho hat with a flat wide brim, a red silk neckerchief tied at the neck, a light beige linen shirt with sleeves rolled to the elbows, dark brown baggy bombacha trousers, a wide brown leather belt decorated with silver coins, and worn brown leather boots, holding up a long iron skewer with three C-shaped raw picanha pieces, fat cap facing outwards like horseshoes, admiring it, inside a rustic gaucho galpão (open wooden barn) with an open side facing the green rolling pampas grassland, a long brick barbecue pit with glowing charcoal embers, long iron skewers, a thick wooden cutting board, a chimarrão gourd with a silver bombilla on the table, warm late-afternoon golden hour sunlight, light smoke drifting, cinematic food documentary, photorealistic, shot on ARRI Alexa, 35mm lens, shallow depth of field, natural warm color grading, 16:9, highly detailed textures
+MOVIMENTO:
+he raises the skewer and turns it slowly to show it, proud smile
+
+======================================================================
+Cena 8 (1:49 – 1:58) · Sal grosso
+======================================================================
+
+--- TOMADA 8A (5s) ---
+IMAGEM:
+A hand sprinkling coarse rock salt over C-shaped raw picanha pieces on an iron skewer, salt crystals in the air, cinematic food documentary, photorealistic, shot on ARRI Alexa, 35mm lens, shallow depth of field, natural warm color grading, 16:9, highly detailed textures
+MOVIMENTO:
+slow motion, salt crystals fall and bounce on the meat and fat
+
+--- TOMADA 8B (4s) ---
+IMAGEM:
+Macro shot of coarse salt crystals resting on the white fat cap of raw picanha, cinematic food documentary, photorealistic, shot on ARRI Alexa, 35mm lens, shallow depth of field, natural warm color grading, 16:9, highly detailed textures
+MOVIMENTO:
+slow focus pull across the salt crystals
+
+======================================================================
+Cena 9 (1:58 – 2:12) · Assar alto e devagar
+======================================================================
+
+--- TOMADA 9A (6s) ---
+IMAGEM:
+Seu Valdir, a 58-year-old Brazilian gaucho barbecue master from Rio Grande do Sul, weathered sun-tanned skin, thick salt-and-pepper mustache, short gray stubble, warm brown eyes with deep crow's feet, friendly confident expression, wearing a black felt gaucho hat with a flat wide brim, a red silk neckerchief tied at the neck, a light beige linen shirt with sleeves rolled to the elbows, dark brown baggy bombacha trousers, a wide brown leather belt decorated with silver coins, and worn brown leather boots, placing a skewer of salted picanha on the highest level of a brick barbecue pit, far above the glowing embers, inside a rustic gaucho galpão (open wooden barn) with an open side facing the green rolling pampas grassland, a long brick barbecue pit with glowing charcoal embers, long iron skewers, a thick wooden cutting board, a chimarrão gourd with a silver bombilla on the table, warm late-afternoon golden hour sunlight, light smoke drifting, cinematic food documentary, photorealistic, shot on ARRI Alexa, 35mm lens, shallow depth of field, natural warm color grading, 16:9, highly detailed textures
+MOVIMENTO:
+he rests the skewer on the top rack support and steps back, light smoke rising
+
+--- TOMADA 9B (8s) ---
+IMAGEM:
+Close-up of picanha on a skewer slowly roasting high above embers, the fat cap starting to turn translucent and glisten, cinematic food documentary, photorealistic, shot on ARRI Alexa, 35mm lens, shallow depth of field, natural warm color grading, 16:9, highly detailed textures
+MOVIMENTO:
+time-lapse, the fat slowly melts and drips down the meat, the surface turns golden, smoke drifting
+
+======================================================================
+Cena 10 (2:12 – 2:22) · O mate e a roda
+======================================================================
+
+--- TOMADA 10A (6s) ---
+IMAGEM:
+Seu Valdir, a 58-year-old Brazilian gaucho barbecue master from Rio Grande do Sul, weathered sun-tanned skin, thick salt-and-pepper mustache, short gray stubble, warm brown eyes with deep crow's feet, friendly confident expression, wearing a black felt gaucho hat with a flat wide brim, a red silk neckerchief tied at the neck, a light beige linen shirt with sleeves rolled to the elbows, dark brown baggy bombacha trousers, a wide brown leather belt decorated with silver coins, and worn brown leather boots, sitting by the barbecue pit sipping chimarrão and watching the fire, peaceful expression, inside a rustic gaucho galpão (open wooden barn) with an open side facing the green rolling pampas grassland, a long brick barbecue pit with glowing charcoal embers, long iron skewers, a thick wooden cutting board, a chimarrão gourd with a silver bombilla on the table, warm late-afternoon golden hour sunlight, light smoke drifting, cinematic food documentary, photorealistic, shot on ARRI Alexa, 35mm lens, shallow depth of field, natural warm color grading, 16:9, highly detailed textures
+MOVIMENTO:
+he sips the chimarrão slowly, firelight flickering on his face, static camera
+
+--- TOMADA 10B (4s) ---
+IMAGEM:
+Wide shot of a Brazilian family and friends of different ages laughing and talking around a barbecue pit inside a rustic galpão at dusk, warm firelight, cinematic food documentary, photorealistic, shot on ARRI Alexa, 35mm lens, shallow depth of field, natural warm color grading, 16:9, highly detailed textures
+MOVIMENTO:
+people laughing and passing a chimarrão gourd, slow camera drift, warm atmosphere
+
+======================================================================
+Cena 11 (2:22 – 2:37) · Dourar e bater o sal
+======================================================================
+
+--- TOMADA 11A (5s) ---
+IMAGEM:
+Seu Valdir, a 58-year-old Brazilian gaucho barbecue master from Rio Grande do Sul, weathered sun-tanned skin, thick salt-and-pepper mustache, short gray stubble, warm brown eyes with deep crow's feet, friendly confident expression, wearing a black felt gaucho hat with a flat wide brim, a red silk neckerchief tied at the neck, a light beige linen shirt with sleeves rolled to the elbows, dark brown baggy bombacha trousers, a wide brown leather belt decorated with silver coins, and worn brown leather boots, moving a skewer of roasting picanha down to the lowest level close to the embers, inside a rustic gaucho galpão (open wooden barn) with an open side facing the green rolling pampas grassland, a long brick barbecue pit with glowing charcoal embers, long iron skewers, a thick wooden cutting board, a chimarrão gourd with a silver bombilla on the table, warm late-afternoon golden hour sunlight, light smoke drifting, cinematic food documentary, photorealistic, shot on ARRI Alexa, 35mm lens, shallow depth of field, natural warm color grading, 16:9, highly detailed textures
+MOVIMENTO:
+he lowers the skewer near the embers, a flare of heat and a burst of sizzle
+
+--- TOMADA 11B (6s) ---
+IMAGEM:
+Close-up of picanha on a skewer with a deep golden-brown crispy crust and bubbling fat, very close to glowing embers, cinematic food documentary, photorealistic, shot on ARRI Alexa, 35mm lens, shallow depth of field, natural warm color grading, 16:9, highly detailed textures
+MOVIMENTO:
+fat bubbling and sizzling on the crust, a small flame licks up, slow push-in
+
+--- TOMADA 11C (4s) ---
+IMAGEM:
+Close-up of a hand tapping the iron skewer of roasted picanha with the back of a knife, excess salt falling off, cinematic food documentary, photorealistic, shot on ARRI Alexa, 35mm lens, shallow depth of field, natural warm color grading, 16:9, highly detailed textures
+MOVIMENTO:
+two firm taps with the back of the knife, salt crystals fall off in slow motion
+
+======================================================================
+Cena 12 (2:37 – 2:51) · Fatiar
+======================================================================
+
+--- TOMADA 12A (7s) ---
+IMAGEM:
+Close-up of roasted picanha on a wooden cutting board being sliced thinly against the grain with a sharp knife, golden crust, pink center, juices on the board, cinematic food documentary, photorealistic, shot on ARRI Alexa, 35mm lens, shallow depth of field, natural warm color grading, 16:9, highly detailed textures
+MOVIMENTO:
+the knife slices through the meat, a thin slice falls revealing the juicy pink center, juices running
+
+--- TOMADA 12B (7s) ---
+IMAGEM:
+Macro shot of thin slices of medium-rare picanha fanned out on a wooden board, golden crispy fat edge, pink juicy center glistening, cinematic food documentary, photorealistic, shot on ARRI Alexa, 35mm lens, shallow depth of field, natural warm color grading, 16:9, highly detailed textures
+MOVIMENTO:
+slow push-in, juices glistening, a little steam rising
+
+======================================================================
+Cena 13 (2:51 – 2:57) · À mesa
+======================================================================
+
+--- TOMADA 13A (6s) ---
+IMAGEM:
+Rustic wooden table inside a gaucho galpão with a board of sliced picanha, crusty bread, a clay bowl of farofa, a tomato and onion salad, glasses of red wine, children's hands reaching for the meat, cinematic food documentary, photorealistic, shot on ARRI Alexa, 35mm lens, shallow depth of field, natural warm color grading, 16:9, highly detailed textures
+MOVIMENTO:
+hands reach in and take slices, laughter, slow overhead camera move
+
+======================================================================
+Cena 14 (2:57 – 3:09) · Despedida
+======================================================================
+
+--- TOMADA 14A (7s) ---
+IMAGEM:
+Seu Valdir, a 58-year-old Brazilian gaucho barbecue master from Rio Grande do Sul, weathered sun-tanned skin, thick salt-and-pepper mustache, short gray stubble, warm brown eyes with deep crow's feet, friendly confident expression, wearing a black felt gaucho hat with a flat wide brim, a red silk neckerchief tied at the neck, a light beige linen shirt with sleeves rolled to the elbows, dark brown baggy bombacha trousers, a wide brown leather belt decorated with silver coins, and worn brown leather boots, looking at the camera and raising his chimarrão gourd in a toast, winking, closed-mouth smile, medium close-up, inside a rustic gaucho galpão (open wooden barn) with an open side facing the green rolling pampas grassland, a long brick barbecue pit with glowing charcoal embers, long iron skewers, a thick wooden cutting board, a chimarrão gourd with a silver bombilla on the table, warm late-afternoon golden hour sunlight, light smoke drifting, cinematic food documentary, photorealistic, shot on ARRI Alexa, 35mm lens, shallow depth of field, natural warm color grading, 16:9, highly detailed textures
+MOVIMENTO:
+he raises the gourd towards the camera and winks, warm smile, static camera
+
+--- TOMADA 14B (5s) ---
+IMAGEM:
+Seu Valdir, a 58-year-old Brazilian gaucho barbecue master from Rio Grande do Sul, weathered sun-tanned skin, thick salt-and-pepper mustache, short gray stubble, warm brown eyes with deep crow's feet, friendly confident expression, wearing a black felt gaucho hat with a flat wide brim, a red silk neckerchief tied at the neck, a light beige linen shirt with sleeves rolled to the elbows, dark brown baggy bombacha trousers, a wide brown leather belt decorated with silver coins, and worn brown leather boots, seen from behind walking out of the galpão towards the pampas at sunset, waving one hand over his shoulder, cinematic food documentary, photorealistic, shot on ARRI Alexa, 35mm lens, shallow depth of field, natural warm color grading, 16:9, highly detailed textures
+MOVIMENTO:
+he walks away slowly while waving goodbye, golden sunset, camera stays still
+
+======================================================================
+Encerramento (3:09 – 3:17) · sem narração
+======================================================================
+
+--- TOMADA E1 (8s) ---
+IMAGEM:
+Wide shot of the galpão at dusk with the fire glowing inside and silhouettes of a family around a table, pampas under an orange and purple sky, cinematic food documentary, photorealistic, shot on ARRI Alexa, 35mm lens, shallow depth of field, natural warm color grading, 16:9, highly detailed textures
+MOVIMENTO:
+very slow pull-back, first stars appearing, smoke rising
+
+======================================================================
+CAPA DO BILIBILI (16:9, 1920x1080)
+======================================================================
+
+IMAGEM:
+Seu Valdir, a 58-year-old Brazilian gaucho barbecue master from Rio Grande do Sul, weathered sun-tanned skin, thick salt-and-pepper mustache, short gray stubble, warm brown eyes with deep crow's feet, friendly confident expression, wearing a black felt gaucho hat with a flat wide brim, a red silk neckerchief tied at the neck, a light beige linen shirt with sleeves rolled to the elbows, dark brown baggy bombacha trousers, a wide brown leather belt decorated with silver coins, and worn brown leather boots, smiling and holding up a long iron skewer with three golden roasted C-shaped picanha pieces with crispy fat, glowing embers and smoke in the foreground, rustic galpão and pampas sunset behind, dramatic warm lighting, empty space on the left for text, cinematic food documentary, photorealistic, shot on ARRI Alexa, 35mm lens, shallow depth of field, natural warm color grading, 16:9, highly detailed textures
