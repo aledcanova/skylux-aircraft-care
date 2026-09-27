@@ -517,7 +517,7 @@ def renderizar(plano, clipes_dir, musica, inicio_musica, duracao, saida, args):
         filtros.append("[af][m]amix=inputs=2:duration=first:normalize=0[aout]")
         saida_audio = "[aout]"
     cmd += ["-filter_complex", ";".join(filtros), "-map", "[v]", "-map", saida_audio,
-            "-c:v", "libx264", "-preset", args.preset, "-crf", "20", "-pix_fmt", "yuv420p",
+            "-c:v", "libx264", "-preset", args.preset, "-crf", "20", "-maxrate", "6500k", "-bufsize", "13000k", "-pix_fmt", "yuv420p",
             "-r", str(FPS), "-c:a", "aac", "-b:a", "192k", "-t", f"{duracao:.3f}",
             "-movflags", "+faststart", str(saida)]
     subprocess.run(cmd, check=True)
