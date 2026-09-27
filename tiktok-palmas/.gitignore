@@ -2,6 +2,6 @@ clipes/*
 !clipes/.gitkeep
 musica/*
 !musica/.gitkeep
-saida/
+saida*/
 palmas.csv
 __pycache__/
