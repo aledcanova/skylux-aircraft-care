@@ -15,6 +15,7 @@ Dependências:  pip install numpy imageio-ffmpeg
 """
 import argparse
 import csv
+import json
 import pathlib
 import random
 import re
@@ -176,8 +177,8 @@ def analisar_imagem(arquivo):
     cache = arquivo.parent / ".analise" / (arquivo.name + ".npz")
     if cache.exists() and cache.stat().st_mtime >= arquivo.stat().st_mtime:
         d = np.load(cache)
-        if "barras" in d.files:
-            return {k: d[k] for k in d.files}
+        if "faixas" in d.files:
+            return aplicar_barras({k: d[k] for k in d.files}, None)
     r = subprocess.run([ffmpeg_bin(), "-hide_banner", "-i", str(arquivo)],
                        capture_output=True, text=True, errors="replace")
     w0, h0 = map(int, re.search(r"Video:.*?(\d{2,5})x(\d{2,5})", r.stderr).groups())
@@ -202,11 +203,16 @@ def analisar_imagem(arquivo):
             quadros = np.concatenate([anterior[None], quadros])
         dif = np.abs(np.diff(quadros, axis=0))
         # ignora o chuvisco de compressão (diferenças pequenas)
-        colunas.append(np.where(dif > 12, dif, 0).sum(axis=1).astype(np.float32))
+        mov = np.where(dif > 12, dif, 0)
+        # movimento por faixa de 10 linhas x coluna (permite ignorar legendas e tarjas depois)
+        nf = -(-altura // 10)
+        mov = np.pad(mov, ((0, 0), (0, nf * 10 - altura), (0, 0)))
+        colunas.append(mov.reshape(len(mov), nf, 10, ANALISE_LARGURA).sum(axis=2).astype(np.float16))
         global_.append(dif.mean(axis=(1, 2)).astype(np.float32))
         anterior = quadros[-1]
     proc.wait()
-    colunas = np.concatenate(colunas) if colunas else np.zeros((0, ANALISE_LARGURA), np.float32)
+    faixas = np.concatenate(colunas) if colunas else np.zeros((0, 1, ANALISE_LARGURA), np.float16)
+    colunas = faixas.astype(np.float32).sum(axis=1)
     global_ = np.concatenate(global_) if global_ else np.zeros(0, np.float32)
     # corte de câmera: salto brusco na imagem inteira, bem acima do normal em volta
     cortes = []
@@ -220,12 +226,24 @@ def analisar_imagem(arquivo):
     topo = int(np.argmin(escuras)) if not escuras.all() else 0
     base = int(np.argmin(escuras[::-1])) if not escuras.all() else 0
     barras = np.array([topo / altura, base / altura]) if topo + base < altura * 0.6 else np.zeros(2)
-    d = {"colunas": colunas, "cortes": np.array(cortes), "barras": barras,
+    d = {"faixas": faixas, "cortes": np.array(cortes), "barras": barras, "proporcao_original": np.array(w0 / h0),
          "proporcao": np.array(w0 / h0 * (1 / max(0.4, 1 - barras.sum()))),
          "conteudo": np.concatenate(conteudo) if conteudo else np.zeros(0, np.float32)}
     cache.parent.mkdir(exist_ok=True)
     np.savez_compressed(cache, **d)
-    return d
+    return aplicar_barras(d, None)
+
+
+def aplicar_barras(an, barras):
+    """Define a área útil da imagem (sem tarjas/legendas) e recalcula o movimento por coluna nela."""
+    if barras is not None:
+        an["barras"] = np.array(barras, dtype=float)
+    topo, base = an["barras"]
+    nf = an["faixas"].shape[1]
+    f0, f1 = int(np.ceil(topo * nf)), max(int(np.ceil(topo * nf)) + 1, int(np.floor((1 - base) * nf)))
+    an["colunas"] = an["faixas"][:, f0:f1, :].astype(np.float32).sum(axis=1)
+    an["proporcao"] = np.array(float(an["proporcao_original"]) / max(0.3, 1 - topo - base))
+    return an
 
 
 def janela_recorte(proporcao):
@@ -370,13 +388,25 @@ def regularidade(tempos):
     return np.array(notas)
 
 
+def ler_ajustes(clipes_dir):
+    """clipes/ajustes.json: {"video.mp4": {"cortar_base": 0.2, "cortar_topo": 0}} — ex.: tirar legendas."""
+    arq = clipes_dir / "ajustes.json"
+    return json.loads(arq.read_text(encoding="utf-8")) if arq.exists() else {}
+
+
 def preparar_candidatos(palmas, duracoes, clipes_dir):
     """Junta som e imagem: cada palma ganha uma nota de 'dá para ver alguém batendo palma'."""
     analises, cands = {}, []
+    ajustes = ler_ajustes(clipes_dir)
     for nome in dict.fromkeys(n for n, _, _ in palmas):
         if not duracoes[nome][1]:
             continue
-        analises[nome] = analisar_imagem(clipes_dir / nome)
+        an = analisar_imagem(clipes_dir / nome)
+        aj = ajustes.get(nome, {})
+        if aj:
+            topo, base = an["barras"]
+            an = aplicar_barras(an, (max(topo, aj.get("cortar_topo", 0)), max(base, aj.get("cortar_base", 0))))
+        analises[nome] = an
         do_filme = [(t, f) for n, t, f in palmas if n == nome]
         vis = np.array([movimento_no_recorte(analises[nome], t - 0.3, t + 0.1)[1] for t, _ in do_filme])
         ref = np.percentile(vis, 80) + 1e-9 if len(vis) else 1
@@ -396,7 +426,8 @@ def preparar_candidatos(palmas, duracoes, clipes_dir):
     return cands, analises
 
 
-def planejar(batidas, forcas, duracao, cands, analises, duracoes, rng, batidas_por_corte, cronologico):
+def planejar(batidas, forcas, duracao, cands, analises, duracoes, rng, batidas_por_corte, cronologico,
+             evitar=(), deslocamento=0.0):
     """Cortes caem nas batidas e cada palma cai na batida forte seguinte.
 
     Com 2 batidas por corte: troca de cena numa batida, palma na próxima (a mais forte do par),
@@ -417,7 +448,7 @@ def planejar(batidas, forcas, duracao, cands, analises, duracoes, rng, batidas_p
         q_ini, q_fim = limites[k], limites[k + 1]
         lead = (round(alvo * FPS) - q_ini) / FPS   # tempo mostrado antes da palma
         dur = (q_fim - q_ini) / FPS
-        meta = lo + (k + 0.5) / n * (hi - lo)     # ponto do vídeo que este corte deve mostrar
+        meta = lo + min(1, (k + 0.5 + deslocamento) / n) * (hi - lo)  # ponto do vídeo que este corte deve mostrar
         melhores = []
         # 1ª tentativa: palmas ainda não usadas; se faltar material, aceita repetir uma
         for repetir in (False, True):
@@ -433,6 +464,8 @@ def planejar(batidas, forcas, duracao, cands, analises, duracoes, rng, batidas_p
                 if repetida and not repetir:
                     continue
                 custo = -2.0 * c["nota"] + rng.uniform(0, 0.4) + (4 if repetida else 0)
+                if any(e[0] == nome and abs(e[1] - t) < 0.25 for e in evitar):
+                    custo += 2.5  # já usada em outra versão deste vídeo
                 if cronologico:
                     custo += 1.5 * abs(t - meta) / max(1e-9, (hi - lo) / n)
                     if t < t_anterior:
@@ -447,7 +480,8 @@ def planejar(batidas, forcas, duracao, cands, analises, duracoes, rng, batidas_p
                      "Mande vídeos com mais palmas ou use --batidas-por-corte 4.")
         _, nome, t, ini, fim = min(melhores)
         centro, _ = movimento_no_recorte(analises[nome], ini, fim)
-        plano.append((nome, ini, q_fim - q_ini, centro, tuple(analises[nome]["barras"])))
+        plano.append((nome, ini, q_fim - q_ini, centro, tuple(analises[nome]["barras"]), t,
+                      round((t - ini) * FPS)))
         usados.append((nome, t))
         anterior, t_anterior = nome, t
     return plano
@@ -456,9 +490,15 @@ def planejar(batidas, forcas, duracao, cands, analises, duracoes, rng, batidas_p
 def renderizar(plano, clipes_dir, musica, inicio_musica, duracao, saida, args):
     cmd = [ffmpeg_bin(), "-y", "-v", "error"]
     filtros, rotulos = [], []
-    for i, (nome, ini, quadros, centro, barras) in enumerate(plano):
+    for i, (nome, ini, quadros, centro, barras, _t, q_palma) in enumerate(plano):
         seg = quadros / FPS
         layout = filtro_layout(args.layout, centro, barras)
+        if args.efeito:
+            # "punch": zoom de 6% e flash leve exatamente no quadro da palma, sumindo em ~0,2 s
+            f = q_palma
+            layout += (f",zoompan=z='if(between(in,{f},{f + 6}),1+0.06*(1-(in-{f})/7),1)'"
+                       f":x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s={LARGURA}x{ALTURA}:fps={FPS}"
+                       f",eq=brightness='0.09*max(0,1-(n-{f})/6)*gte(n,{f})':eval=frame")
         cmd += ["-ss", f"{ini:.3f}", "-t", f"{seg + 0.5:.3f}", "-i", str(clipes_dir / nome)]
         filtros.append(f"[{i}:v]fps={FPS},trim=end_frame={quadros},setpts=PTS-STARTPTS,"
                        f"{layout.replace('[f]', f'[f{i}]').replace('[b]', f'[b{i}]').replace('[b2]', f'[bb{i}]').replace('[f2]', f'[ff{i}]')}[v{i}]")
@@ -515,6 +555,7 @@ def cmd_montar(args):
             for k in range(1, args.edits_por_filme + 1):
                 sufixo = f"_{k}" if args.edits_por_filme > 1 else ""
                 trabalhos.append((f"edit_{pathlib.Path(nome).stem}{sufixo}.mp4", do_filme, args.semente + k))
+    usados_por_versao = {}
     creditos = args.saida / "creditos.csv"
     novo = not creditos.exists()
     with open(creditos, "a", newline="", encoding="utf-8") as f:
@@ -526,8 +567,14 @@ def cmd_montar(args):
             if destino.exists() and not args.refazer:
                 print(f"[{n}/{len(trabalhos)}] {arquivo} já existe, pulando")
                 continue
-            plano = planejar(batidas, forcas, args.duracao, grupo, analises, duracoes,
-                             random.Random(semente), args.batidas_por_corte, not args.misturar)
+            versao = int(arquivo.rsplit("_", 1)[-1].split(".")[0]) if args.edits_por_filme > 1 else 1
+            nome_video = grupo[0]["nome"] if grupo else None
+            evitar = [u for (nv, v), us in usados_por_versao.items() if nv == nome_video and v < versao for u in us]
+            plano = planejar(batidas, forcas, args.duracao, grupo, analises, duracoes, random.Random(semente),
+                             args.batidas_por_corte,
+                             cronologico=not args.misturar and versao != 3,  # versão 3: melhores momentos
+                             evitar=evitar, deslocamento=0.5 if versao == 2 else 0.0)
+            usados_por_versao[(nome_video, versao)] = [(p[0], p[5]) for p in plano]
             renderizar(plano, args.clipes, musica, args.inicio_musica, args.duracao, destino, args)
             usados = sorted({pathlib.Path(nome).stem for nome, *_ in plano})
             w.writerow([arquivo, " | ".join(usados)])
@@ -566,6 +613,8 @@ def main():
         s.add_argument("--batidas-por-corte", type=int, default=2,
                        help="1 = troca de cena a cada batida (frenético), 2 = a cada 2 batidas...")
         s.add_argument("--layout", choices=["desfoque", "cortar"], default="cortar")
+        s.add_argument("--sem-efeito", dest="efeito", action="store_false",
+                       help="desliga o zoom/flash na hora da palma")
         s.add_argument("--volume-filme", type=float, default=0.6, help="volume do som original das cenas")
         s.add_argument("--volume-musica", type=float, default=1.0)
         s.add_argument("--sem-musica", action="store_true",
