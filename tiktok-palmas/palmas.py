@@ -384,7 +384,7 @@ def main():
                        help="arquivo .txt com os segundos exatos das batidas (substitui a detecção)")
         s.add_argument("--batidas-por-corte", type=int, default=2,
                        help="1 = troca de cena a cada batida (frenético), 2 = a cada 2 batidas...")
-        s.add_argument("--layout", choices=["desfoque", "cortar"], default="desfoque")
+        s.add_argument("--layout", choices=["desfoque", "cortar"], default="cortar")
         s.add_argument("--volume-filme", type=float, default=0.6, help="volume do som original das cenas")
         s.add_argument("--volume-musica", type=float, default=1.0)
         s.add_argument("--sem-musica", action="store_true",
