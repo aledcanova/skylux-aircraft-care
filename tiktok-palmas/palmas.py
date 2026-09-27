@@ -326,18 +326,34 @@ def cmd_montar(args):
     print(f"Palmas disponíveis: {len(palmas)} em {len(duracoes)} clipes\n")
 
     args.saida.mkdir(exist_ok=True)
-    with open(args.saida / "creditos.csv", "w", newline="", encoding="utf-8") as f:
+    if args.misturar:
+        # vários filmes no mesmo edit
+        trabalhos = [(f"edit_{n:03}.mp4", palmas, args.semente + n) for n in range(1, args.quantidade + 1)]
+    else:
+        # padrão: cada edit usa um filme só; um (ou --edits-por-filme) edit por filme
+        trabalhos = []
+        for nome in dict.fromkeys(nome for nome, _ in palmas):
+            do_filme = [pl for pl in palmas if pl[0] == nome]
+            for k in range(1, args.edits_por_filme + 1):
+                sufixo = f"_{k}" if args.edits_por_filme > 1 else ""
+                trabalhos.append((f"edit_{pathlib.Path(nome).stem}{sufixo}.mp4", do_filme, args.semente + k))
+    creditos = args.saida / "creditos.csv"
+    novo = not creditos.exists()
+    with open(creditos, "a", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
-        w.writerow(["video", "clipes_usados"])
-        for n in range(1, args.quantidade + 1):
-            rng = random.Random(args.semente + n)
-            plano = planejar(batidas, args.duracao, palmas, duracoes, rng, args.batidas_por_corte)
-            destino = args.saida / f"edit_{n:03}.mp4"
+        if novo:
+            w.writerow(["video", "clipes_usados"])
+        for n, (arquivo, grupo, semente) in enumerate(trabalhos, 1):
+            destino = args.saida / arquivo
+            if destino.exists() and not args.refazer:
+                print(f"[{n}/{len(trabalhos)}] {arquivo} já existe, pulando")
+                continue
+            plano = planejar(batidas, args.duracao, grupo, duracoes, random.Random(semente), args.batidas_por_corte)
             renderizar(plano, args.clipes, musica, args.inicio_musica, args.duracao, destino, args)
             usados = sorted({pathlib.Path(nome).stem for nome, _, _ in plano})
-            w.writerow([destino.name, " | ".join(usados)])
+            w.writerow([arquivo, " | ".join(usados)])
             f.flush()
-            print(f"[{n}/{args.quantidade}] {destino.name}  ({len(plano)} cortes)")
+            print(f"[{n}/{len(trabalhos)}] {arquivo}  ({len(plano)} cortes)")
     print(f"\nPronto! Vídeos em {args.saida}/ e lista de filmes usados em creditos.csv")
 
 
@@ -354,7 +370,11 @@ def main():
         s.add_argument("--sensibilidade", type=int, choices=range(1, 6), default=3,
                        help="1 = só palmas bem nítidas ... 5 = pega tudo (mais falsos positivos)")
     for s in (m, t):
-        s.add_argument("--quantidade", type=int, default=100)
+        s.add_argument("--misturar", action="store_true",
+                       help="mistura filmes diferentes no mesmo edit (padrão: um filme por edit)")
+        s.add_argument("--quantidade", type=int, default=100, help="nº de edits com --misturar")
+        s.add_argument("--edits-por-filme", type=int, default=1, help="edits diferentes gerados de cada filme")
+        s.add_argument("--refazer", action="store_true", help="gera de novo edits que já existem")
         s.add_argument("--duracao", type=float, default=30)
         s.add_argument("--pasta-musica", type=pathlib.Path, default=PASTA / "musica")
         s.add_argument("--musica", type=pathlib.Path, help="arquivo da música (padrão: o primeiro em musica/)")

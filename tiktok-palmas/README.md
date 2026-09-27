@@ -25,12 +25,12 @@ Isso já instala o ffmpeg junto, sem precisar instalar nada à parte.
 ## Uso
 
 ```
-python3 palmas.py tudo --quantidade 100
+python3 palmas.py tudo
 ```
 
 No Windows, use `python` no lugar de `python3`.
 
-Pronto: os vídeos saem em `saida/edit_001.mp4` … `edit_100.mp4`, com a lista de filmes de cada um em `saida/creditos.csv`. Cada vídeo leva uns 20 a 40 s para ser gerado, então os 100 levam cerca de 1 hora.
+Pronto: sai um edit por filme (`saida/edit_<nome-do-filme>.mp4`), cada um usando só aquele filme. Edits já gerados são pulados, então dá para ir adicionando filmes aos poucos. Use `--edits-por-filme 3` para gerar variações de cada filme, ou `--misturar --quantidade 100` para misturar filmes. Cada vídeo leva uns 20 a 40 s para ser gerado, então os 100 levam cerca de 1 hora.
 
 Por padrão, o script usa os **primeiros 30 segundos da música**.
 
