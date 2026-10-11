@@ -16,3 +16,9 @@ Site estático de uma página da SkyLux Aviation (detalhamento de aeronaves, Van
 - Contatos oficiais: `Info@skylux-aviation.com`, +1 (213) 696-5737. Mantenha-os iguais no CONTACT e no FOOTER.
 - Preview local: `python3 -m http.server 8791` (já configurado em `.claude/launch.json`).
 - Não troque a `access_key` do Web3Forms sem pedido explícito (ela foi verificada para entregar ao email acima).
+
+## Contexto global (segundo cérebro)
+O contexto transversal do Alexandre (perfil, contatos, outras frentes) fica no repositório privado
+`aledcanova/segundo-cerebro`. Se ele não estiver nesta sessão, anexe-o (add_repo / clone) e rode lá
+`python3 tools/brain.py brief` e `python3 tools/brain.py card skylux`. Fatos novos e duráveis
+sobre este projeto: `python3 tools/brain.py nota skylux "<fato> (fonte: ...)"`. As regras deste repositório têm precedência.
